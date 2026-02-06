@@ -35,75 +35,16 @@ function Header() {
   )
 }
 
-// Soft Cover Book Component
-function SoftCoverBook({ className = '' }: { className?: string }) {
+// Book Image Component
+function BookImage({ className = '' }: { className?: string }) {
   return (
     <div className={`relative ${className}`}>
-      {/* Shadow under book */}
-      <div className="absolute -bottom-4 left-4 right-4 h-8 bg-black/10 blur-xl rounded-full"></div>
-
-      {/* Book container with 3D effect */}
-      <div className="relative" style={{ perspective: '1000px' }}>
-        <div className="relative" style={{ transform: 'rotateY(-5deg)' }}>
-          {/* Page edges (right side) */}
-          <div className="absolute right-0 top-2 bottom-2 w-3 bg-gradient-to-r from-gray-100 to-gray-200 rounded-r-sm"
-               style={{ transform: 'translateX(100%)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-300/50 to-transparent"></div>
-          </div>
-
-          {/* Main book cover */}
-          <div className="relative bg-gradient-to-br from-[#2596be] via-[#1e7a9c] to-[#164e63] rounded-sm overflow-hidden shadow-xl"
-               style={{ aspectRatio: '3/4' }}>
-            {/* Spine highlight */}
-            <div className="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r from-black/20 via-black/5 to-transparent"></div>
-
-            {/* Cover texture overlay */}
-            <div className="absolute inset-0 opacity-5"
-                 style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }}></div>
-
-            {/* Content */}
-            <div className="relative z-10 p-6 md:p-8 h-full flex flex-col">
-              {/* Top badge */}
-              <div className="inline-flex items-center gap-1.5 bg-white/20 rounded-full px-3 py-1 text-xs font-medium text-white self-start">
-                FREE GUIDE
-              </div>
-
-              {/* Title */}
-              <div className="flex-1 flex flex-col justify-center py-6">
-                <h3 className="text-2xl md:text-3xl font-extrabold text-white leading-tight tracking-tight">
-                  The AI Profit
-                </h3>
-                <h3 className="text-2xl md:text-3xl font-extrabold text-white/90 leading-tight tracking-tight">
-                  Blueprint
-                </h3>
-
-                <div className="w-16 h-1 bg-white/40 rounded mt-4 mb-4"></div>
-
-                <p className="text-xs md:text-sm text-white/80 leading-relaxed max-w-[90%]">
-                  How Australian SMBs Are Saving 20+ Hours/Week With AI Automation
-                </p>
-              </div>
-
-              {/* Bottom branding */}
-              <div className="flex items-center gap-2 pt-4 border-t border-white/20">
-                <div className="w-7 h-7 rounded-lg bg-white/20 flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">ez</span>
-                </div>
-                <span className="text-white/70 text-sm font-medium">ezmate.ai</span>
-              </div>
-            </div>
-
-            {/* Glossy effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
-          </div>
-
-          {/* Bottom page edges */}
-          <div className="absolute bottom-0 left-2 right-2 h-2 bg-gradient-to-b from-gray-100 to-gray-200 rounded-b-sm"
-               style={{ transform: 'translateY(100%)' }}>
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-300/50 via-transparent to-gray-300/50"></div>
-          </div>
-        </div>
-      </div>
+      {/* No shadow needed for bg-removed image */}
+      <img
+        src="/AI Profit Ebook - Her - bg removed.png"
+        alt="The AI Profit Blueprint - Free Ebook"
+        className="relative z-10 w-full h-auto"
+      />
     </div>
   )
 }
@@ -152,11 +93,6 @@ export default function LandingPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left: Content */}
               <div className="animate-fade-in-up">
-                <div className="badge mb-6">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  <span>For Australian Business Owners</span>
-                </div>
-
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">
                   Discover How To <Highlight>Capture 3x More Leads</Highlight> And Save 20+ Hours Every Week
                 </h1>
@@ -178,7 +114,7 @@ export default function LandingPage() {
 
               {/* Right: Book */}
               <div className="flex justify-center lg:justify-end animate-fade-in-up delay-200">
-                <SoftCoverBook className="w-48 sm:w-56 md:w-64" />
+                <BookImage className="w-48 sm:w-56 md:w-64" />
               </div>
             </div>
           </div>
@@ -336,17 +272,11 @@ export default function LandingPage() {
                   { metric: '4hrs → 30sec', label: 'Response Time' },
                   { metric: '3x', label: 'Qualified Leads' },
                   { metric: '15+ hrs', label: 'Saved Per Week' },
-                  { metric: null, label: 'Weekends Off', highlight: true },
+                  { metric: 'Weekends Off', label: '' },
                 ].map((item, index) => (
                   <div key={index} className="feature-card p-5 flex flex-col items-center justify-center min-h-[100px]">
-                    {item.highlight ? (
-                      <div className="text-highlight text-lg md:text-xl font-bold text-center">{item.label}</div>
-                    ) : (
-                      <>
-                        <div className="text-primary text-xl md:text-2xl font-bold mb-1 text-center">{item.metric}</div>
-                        <div className="text-gray-500 text-sm text-center">{item.label}</div>
-                      </>
-                    )}
+                    <div className="text-primary text-base md:text-lg font-bold mb-1 text-center">{item.metric}</div>
+                    {item.label && <div className="text-gray-500 text-xs text-center">{item.label}</div>}
                   </div>
                 ))}
               </div>
@@ -359,7 +289,191 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* What We Do Section */}
+        {/* Social Proof Section */}
+        <section className="section-padding bg-[#0a0f1a]">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <span className="badge badge-green mb-4">
+                <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                Real Results
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Do Not Take My Word For It...
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  quote: "I was skeptical. Really skeptical. I had tried chatbots before and they were terrible. But this was different. Within the first week, the AI booked 4 property viewings while I was asleep. ASLEEP. One of those turned into a $1.2M sale. The ROI is insane.",
+                  name: "Sarah Mitchell",
+                  role: "Real Estate Agent",
+                  location: "Melbourne VIC",
+                  result: "$1.2M sale from AI-booked lead",
+                  initials: "SM",
+                  color: "bg-primary"
+                },
+                {
+                  quote: "We run an e-commerce store and were drowning in customer service inquiries. Returns, shipping questions, product questions... it was killing us. Now the AI handles 80% of it automatically. My team can actually focus on growth instead of answering the same questions 50 times a day.",
+                  name: "James Thompson",
+                  role: "E-commerce Business Owner",
+                  location: "Sydney NSW",
+                  result: "80% of inquiries automated",
+                  initials: "JT",
+                  color: "bg-green-600"
+                },
+                {
+                  quote: "Patient no-shows were costing us thousands every month. The automated reminder system alone paid for everything within the first 3 weeks. Now patients get confirmation calls, text reminders, and can even reschedule through the AI. Our no-show rate dropped from 23% to 8%.",
+                  name: "Dr. Lisa Chen",
+                  role: "Healthcare Clinic Director",
+                  location: "Brisbane QLD",
+                  result: "No-shows reduced from 23% to 8%",
+                  initials: "LC",
+                  color: "bg-purple-600"
+                },
+              ].map((testimonial, index) => (
+                <div key={index} className="testimonial-card">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="badge badge-green text-xs">
+                      {testimonial.result}
+                    </span>
+                  </div>
+                  <p className="text-lg mb-6 leading-relaxed text-gray-300">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className={`w-12 h-12 ${testimonial.color} rounded-full flex items-center justify-center text-white font-bold`}>
+                      {testimonial.initials}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white">{testimonial.name}</p>
+                      <p className="text-gray-500 text-sm">{testimonial.role}, {testimonial.location}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* What Is In The Blueprint */}
+        <section className="section-padding bg-[#0f172a] overflow-hidden">
+          <div className="max-w-6xl mx-auto px-4">
+            {/* Section Header */}
+            <div className="text-center mb-12 md:mb-16">
+              <span className="badge badge-orange mb-4">
+                <span className="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
+                What Is Inside
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                Here Is Exactly What You Will Discover Inside This Free Blueprint...
+              </h2>
+              <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+                This is not some fluffy ebook filled with generic advice you have heard a thousand times.
+                It is a practical, no-BS guide packed with the exact strategies we use with our paying clients.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              {/* Left: Book */}
+              <div className="flex justify-center order-2 lg:order-1">
+                <BookImage className="w-56 sm:w-64 md:w-72 lg:w-80" />
+              </div>
+
+              {/* Right: Chapter List */}
+              <div className="order-1 lg:order-2">
+                <div className="space-y-3 md:space-y-4">
+                  {[
+                    { chapter: 1, title: 'The $50,000 AI Mistake', subtitle: '90% of businesses make this (and how to avoid it)' },
+                    { chapter: 2, title: 'The Only 3 AI Tools You Need', subtitle: 'Forget the rest - these actually work' },
+                    { chapter: 3, title: 'Copy-Paste Chatbot Scripts', subtitle: 'Convert visitors into leads while you sleep' },
+                    { chapter: 4, title: 'The "Set & Forget" Framework', subtitle: 'Save 20+ hours every single week' },
+                    { chapter: 5, title: 'ROI Calculator Worksheet', subtitle: 'See exactly how much you will save' },
+                    { chapter: 6, title: '7-Day Implementation Roadmap', subtitle: 'Your step-by-step action plan' },
+                  ].map((item) => (
+                    <div key={item.chapter} className="feature-card p-4 md:p-5 group cursor-pointer">
+                      <div className="flex items-start gap-4">
+                        <div className="chapter-number flex-shrink-0">
+                          {item.chapter}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h4 className="text-white font-semibold text-sm md:text-base group-hover:text-primary transition-colors">
+                            {item.title}
+                          </h4>
+                          <p className="text-gray-500 text-xs md:text-sm mt-0.5">
+                            {item.subtitle}
+                          </p>
+                        </div>
+                        <svg className="w-5 h-5 text-gray-600 group-hover:text-primary transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-8 md:mt-10 text-center lg:text-left">
+                  <CTAButton />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Free Section */}
+        <section className="section-padding bg-[#0a0f1a]">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                So Why Am I Giving This Book Away For Free...?
+              </h2>
+            </div>
+
+            <div className="space-y-6 text-gray-400 text-lg">
+              <p>
+                Good question.
+              </p>
+
+              <p>
+                Here is the deal. After you read this blueprint, one of two things will happen:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 my-10">
+                <div className="feature-card p-8">
+                  <div className="text-primary text-xl font-bold mb-4">Option 1</div>
+                  <p className="text-gray-300 m-0">
+                    You take all the strategies from this book and implement them yourself.
+                    You boost your business by adapting AI automation on your own.
+                  </p>
+                  <p className="text-gray-500 mt-4 text-base italic">
+                    Some people actually do this. And I am genuinely happy that I can help people who visited my website.
+                  </p>
+                </div>
+                <div className="feature-card p-8">
+                  <div className="text-primary text-xl font-bold mb-4">Option 2</div>
+                  <p className="text-gray-300 m-0">
+                    You realise this AI stuff is powerful but you would rather have someone
+                    who knows what they are doing handle it for you.
+                  </p>
+                  <p className="text-gray-500 mt-4 text-base italic">
+                    And when that happens... I hope you will think of us.
+                  </p>
+                </div>
+              </div>
+
+              <p>
+                Either way, you win. There is no catch. No hidden upsell. No annoying sales calls
+                every day. Just genuinely useful information that will help your business.
+              </p>
+
+              <p className="text-xl text-white font-medium">
+                Simple as that.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* What We Do Section - The Solution */}
         <section className="section-padding bg-[#0f172a]">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -454,190 +568,6 @@ export default function LandingPage() {
 
             <div className="text-center mt-12">
               <CTAButton />
-            </div>
-          </div>
-        </section>
-
-        {/* Social Proof Section */}
-        <section className="section-padding bg-[#0a0f1a]">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <span className="badge badge-green mb-4">
-                <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-                Real Results
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Do Not Take My Word For It...
-              </h2>
-            </div>
-
-            <div className="space-y-6">
-              {[
-                {
-                  quote: "I was skeptical. Really skeptical. I had tried chatbots before and they were terrible. But this was different. Within the first week, the AI booked 4 property viewings while I was asleep. ASLEEP. One of those turned into a $1.2M sale. The ROI is insane.",
-                  name: "Sarah Mitchell",
-                  role: "Real Estate Agent",
-                  location: "Melbourne VIC",
-                  result: "$1.2M sale from AI-booked lead",
-                  initials: "SM",
-                  color: "bg-primary"
-                },
-                {
-                  quote: "We run an e-commerce store and were drowning in customer service inquiries. Returns, shipping questions, product questions... it was killing us. Now the AI handles 80% of it automatically. My team can actually focus on growth instead of answering the same questions 50 times a day.",
-                  name: "James Thompson",
-                  role: "E-commerce Business Owner",
-                  location: "Sydney NSW",
-                  result: "80% of inquiries automated",
-                  initials: "JT",
-                  color: "bg-green-600"
-                },
-                {
-                  quote: "Patient no-shows were costing us thousands every month. The automated reminder system alone paid for everything within the first 3 weeks. Now patients get confirmation calls, text reminders, and can even reschedule through the AI. Our no-show rate dropped from 23% to 8%.",
-                  name: "Dr. Lisa Chen",
-                  role: "Healthcare Clinic Director",
-                  location: "Brisbane QLD",
-                  result: "No-shows reduced from 23% to 8%",
-                  initials: "LC",
-                  color: "bg-purple-600"
-                },
-              ].map((testimonial, index) => (
-                <div key={index} className="testimonial-card">
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="badge badge-green text-xs">
-                      {testimonial.result}
-                    </span>
-                  </div>
-                  <p className="text-lg mb-6 leading-relaxed text-gray-300">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <div className={`w-12 h-12 ${testimonial.color} rounded-full flex items-center justify-center text-white font-bold`}>
-                      {testimonial.initials}
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">{testimonial.name}</p>
-                      <p className="text-gray-500 text-sm">{testimonial.role}, {testimonial.location}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* What Is In The Blueprint */}
-        <section className="section-padding bg-[#0f172a] overflow-hidden">
-          <div className="max-w-6xl mx-auto px-4">
-            {/* Section Header */}
-            <div className="text-center mb-12 md:mb-16">
-              <span className="badge badge-orange mb-4">
-                <span className="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
-                What Is Inside
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Here Is Exactly What You Will Discover Inside This Free Blueprint...
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
-                This is not some fluffy ebook filled with generic advice you have heard a thousand times.
-                It is a practical, no-BS guide packed with the exact strategies we use with our paying clients.
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              {/* Left: Book */}
-              <div className="flex justify-center order-2 lg:order-1">
-                <SoftCoverBook className="w-56 sm:w-64 md:w-72 lg:w-80" />
-              </div>
-
-              {/* Right: Chapter List */}
-              <div className="order-1 lg:order-2">
-                <div className="space-y-3 md:space-y-4">
-                  {[
-                    { chapter: 1, title: 'The $50,000 AI Mistake', subtitle: '90% of businesses make this (and how to avoid it)' },
-                    { chapter: 2, title: 'The Only 3 AI Tools You Need', subtitle: 'Forget the rest - these actually work' },
-                    { chapter: 3, title: 'Copy-Paste Chatbot Scripts', subtitle: 'Convert visitors into leads while you sleep' },
-                    { chapter: 4, title: 'The "Set & Forget" Framework', subtitle: 'Save 20+ hours every single week' },
-                    { chapter: 5, title: 'ROI Calculator Worksheet', subtitle: 'See exactly how much you will save' },
-                    { chapter: 6, title: '7-Day Implementation Roadmap', subtitle: 'Your step-by-step action plan' },
-                  ].map((item) => (
-                    <div key={item.chapter} className="feature-card p-4 md:p-5 group cursor-pointer">
-                      <div className="flex items-start gap-4">
-                        <div className="chapter-number flex-shrink-0">
-                          {item.chapter}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <h4 className="text-white font-semibold text-sm md:text-base group-hover:text-primary transition-colors">
-                            {item.title}
-                          </h4>
-                          <p className="text-gray-500 text-xs md:text-sm mt-0.5">
-                            {item.subtitle}
-                          </p>
-                        </div>
-                        <svg className="w-5 h-5 text-gray-600 group-hover:text-primary transition-colors flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8 md:mt-10 text-center lg:text-left">
-                  <CTAButton />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Free Section */}
-        <section className="section-padding bg-[#0a0f1a]">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
-                So Why Am I Giving This Book Away For Free...?
-              </h2>
-            </div>
-
-            <div className="space-y-6 text-gray-400 text-lg">
-              <p>
-                Good question.
-              </p>
-
-              <p>
-                Here is the deal. After you read this blueprint, one of two things will happen:
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-6 my-10">
-                <div className="feature-card p-8">
-                  <div className="text-primary text-xl font-bold mb-4">Option 1</div>
-                  <p className="text-gray-300 m-0">
-                    You take all the strategies from this book and implement them yourself.
-                    You boost your business by adapting AI automation on your own.
-                  </p>
-                  <p className="text-gray-500 mt-4 text-base italic">
-                    Some people actually do this. And I am genuinely happy that I can help people who visited my website.
-                  </p>
-                </div>
-                <div className="feature-card p-8">
-                  <div className="text-primary text-xl font-bold mb-4">Option 2</div>
-                  <p className="text-gray-300 m-0">
-                    You realise this AI stuff is powerful but you would rather have someone
-                    who knows what they are doing handle it for you.
-                  </p>
-                  <p className="text-gray-500 mt-4 text-base italic">
-                    And when that happens... I hope you will think of us.
-                  </p>
-                </div>
-              </div>
-
-              <p>
-                Either way, you win. There is no catch. No hidden upsell. No annoying sales calls
-                every day. Just genuinely useful information that will help your business.
-              </p>
-
-              <p className="text-xl text-white font-medium">
-                Simple as that.
-              </p>
             </div>
           </div>
         </section>
