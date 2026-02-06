@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-02-05T12:30:51.248Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-05T12:30:44.419Z",
+    "activeFeatures": [
+      "website",
+      "thank-you"
+    ],
+    "primaryFeature": "website",
+    "features": {
+      "website": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T11:56:14.682Z",
+          "lastUpdated": "2026-02-05T12:30:44.419Z"
+        },
+        "lastFile": "C:\\Users\\user\\ezmate-ai\\website\\src\\app\\page.tsx"
+      },
+      "thank-you": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T11:57:45.882Z",
+          "lastUpdated": "2026-02-05T11:57:45.882Z"
+        },
+        "lastFile": "C:\\Users\\user\\ezmate-ai\\website\\src\\app\\thank-you\\page.tsx"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-02-04T17:05:52.638Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-02-05T12:30:44.419Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-05T11:56:14.682Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:56:17.284Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:56:22.565Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:56:36.378Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:57:11.283Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:57:45.882Z",
+        "feature": "thank-you",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T12:06:43.199Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T12:17:38.727Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T12:30:44.419Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}
