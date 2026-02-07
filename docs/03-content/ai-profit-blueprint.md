@@ -1357,3 +1357,158 @@ The question is: is it worth it? How much will this actually save you? That is e
 ---
 
 *[Continue to Chapter 6: Your AI ROI Calculator →]*
+
+---
+---
+
+# Chapter 6: Your AI ROI Calculator
+
+See exactly how much you will save.
+
+You have now read five chapters of tools, scripts, templates, and strategies. You know what AI can do for your business. You know which tools to use. You know how to set them up and connect them.
+
+But none of that matters if the numbers do not work.
+
+In this chapter, we stop talking about other businesses and start talking about yours. You are going to fill in your own numbers, calculate your own savings, and see your own ROI projection in black and white.
+
+Grab a pen. This is the chapter where it gets personal.
+
+---
+
+## Part A: Calculate Your Time Savings
+
+Think about your average work week. For each task below, write down how many hours you (or your team) currently spend on it. Be honest. Most business owners underestimate these numbers the first time around.
+
+| Task | Your Hours Per Week |
+|------|:-------------------:|
+| Answering repetitive customer questions (email, chat, social media, phone) | _____ hrs |
+| Playing phone tag with leads and returning missed calls | _____ hrs |
+| Manual follow-ups (adding contacts, sending emails, setting reminders) | _____ hrs |
+| Scheduling, confirmations, reminders, and rescheduling | _____ hrs |
+| Other repetitive admin tasks | _____ hrs |
+| **Your Total Weekly Hours on Automatable Tasks** | **_____ hrs** |
+
+Now calculate the dollar value:
+
+| Calculation | Your Numbers |
+|-------------|:------------:|
+| Your total hours per week | _____ hrs |
+| Your effective hourly rate (or what you would pay someone to do this) | $ _____ /hr |
+| **Weekly time cost** (hours x rate) | **$ _____** |
+| **Monthly time cost** (weekly x 4.3) | **$ _____** |
+| **Annual time cost** (monthly x 12) | **$ _____** |
+
+Write down that annual number. That is how much you are spending every year on tasks that AI can handle for you.
+
+---
+
+## Part B: Calculate Your Lost Revenue from Missed Leads
+
+This one is harder to estimate, but even a conservative calculation will surprise you.
+
+| Question | Your Numbers |
+|----------|:------------:|
+| How many inquiries does your business receive per month? (website, phone, email, social media combined) | _____ |
+| What percentage come outside business hours? (industry average is 40 to 60%) | _____ % |
+| Of those after-hours inquiries, how many do you actually respond to within 1 hour? | _____ % |
+| During business hours, how many inquiries do you respond to within 5 minutes? | _____ % |
+| **Estimated missed or slow-response leads per month** | **_____** |
+
+Now calculate the revenue impact:
+
+| Calculation | Your Numbers |
+|-------------|:------------:|
+| Estimated missed or slow-response leads per month | _____ |
+| Your average customer lifetime value (total revenue from one customer over their relationship with you) | $ _____ |
+| Estimated conversion rate if you responded instantly (industry average: 30 to 50%) | _____ % |
+| **Potential recovered revenue per month** (missed leads x lifetime value x conversion rate) | **$ _____** |
+| **Potential recovered revenue per year** (monthly x 12) | **$ _____** |
+
+Even if you cut this number in half to be extra conservative, it is probably a lot bigger than you expected.
+
+---
+
+## Part C: Cost Comparison
+
+Now let us look at what it costs to solve this problem three different ways.
+
+| | Hire a Full-Time Assistant | DIY with AI Tools | ezmate.ai Done-For-You |
+|---|:---:|:---:|:---:|
+| **Monthly cost** | $3,500 to $5,000 | $60 to $180 | Custom quote |
+| **Setup time** | 2 to 4 weeks (recruiting + training) | 2 to 4 weeks (learning + building) | 7 days |
+| **Your time investment** | 5+ hrs/week managing | 12+ hrs setup, 2 to 4 hrs/week maintenance | 1 hour (AI Audit call) |
+| **Available hours** | 40 hrs/week | 24/7 | 24/7 |
+| **Handles phone calls** | Yes (1 at a time) | Yes (unlimited simultaneous) | Yes (unlimited simultaneous) |
+| **Handles website chat** | Yes (1 at a time) | Yes (unlimited simultaneous) | Yes (unlimited simultaneous) |
+| **Scales without extra cost** | No (need to hire more) | Yes | Yes |
+| **Consistency** | Varies by person | 100% consistent | 100% consistent |
+| **Sick days, vacations** | Yes | Never | Never |
+
+The AI option is not just cheaper. It is better in almost every measurable way.
+
+---
+
+## Part D: Your 90-Day ROI Projection
+
+Let us bring it all together. Fill in the numbers from Parts A, B, and C.
+
+**Your Investment:**
+
+| Item | Monthly Cost |
+|------|:------------:|
+| AI tools (Claude + Retell AI + Make.com) | $ _____ /mo |
+| Professional setup (if using Done-For-You service) | $ _____ /mo |
+| **Total Monthly Investment** | **$ _____ /mo** |
+
+**Your Returns:**
+
+| Item | Monthly Value |
+|------|:-------------:|
+| Time savings (from Part A) | $ _____ /mo |
+| Recovered revenue from missed leads (from Part B) | $ _____ /mo |
+| **Total Monthly Return** | **$ _____ /mo** |
+
+**Your ROI:**
+
+| Metric | Your Numbers |
+|--------|:------------:|
+| Monthly return | $ _____ |
+| Monthly investment | $ _____ |
+| **Monthly net gain** (return minus investment) | **$ _____** |
+| **ROI percentage** (net gain / investment x 100) | **_____ %** |
+| **90-day total net gain** (monthly net gain x 3) | **$ _____** |
+
+---
+
+## What the Numbers Usually Look Like
+
+If you are not sure whether your numbers are realistic, here is what we typically see from businesses similar to yours:
+
+| Business Type | Monthly Investment | Monthly Return | ROI |
+|---------------|:------------------:|:--------------:|:---:|
+| Real Estate Agency | $150 | $4,200 | 2,700% |
+| Dental Clinic | $200 | $6,800 | 3,300% |
+| E-commerce Store | $120 | $3,500 | 2,800% |
+| Law Firm | $180 | $8,500 | 4,600% |
+| Plumbing / Trades | $130 | $5,200 | 3,900% |
+| Salon / Spa | $100 | $2,800 | 2,700% |
+
+These are real numbers from real clients. The ROI is not 10% or 20%. It is **thousands of percent.** That is because the investment is small (a few hundred dollars per month) and the returns are large (hours of time saved plus revenue that would have been lost entirely).
+
+---
+
+## The One Number That Matters
+
+Look at the bottom of your Part D calculation. Look at the **90-day total net gain** number you wrote down.
+
+That is how much money you will either capture or lose in the next 90 days based on what you do with the information in this guide.
+
+If you do nothing, that number stays at zero. The missed leads keep going to your competitors. The repetitive tasks keep eating your hours. The after-hours inquiries keep getting ignored.
+
+If you take action, that number becomes real revenue in your bank account and real hours back in your week.
+
+**Write down your 90-day number. You will need it on the next page.**
+
+---
+
+*[Continue to Chapter 7: Your Two Options →]*
