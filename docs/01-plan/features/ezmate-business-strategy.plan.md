@@ -169,7 +169,7 @@ ezmate.ai Differentiators:
 
 | Service | Price | Purpose |
 |---------|-------|---------|
-| **AI Audit** | FREE (30 min) | Lead conversion, needs assessment |
+| **AI Audit** | FREE (60 min) | Lead conversion, needs assessment |
 | **AI Audit** | $297 | Current process analysis + recommendations |
 | **Strategy Session** | $497 (2 hours) | AI adoption roadmap |
 | **Ongoing Advisory** | $997/mo | 4 hours/month strategy meetings |
@@ -276,7 +276,7 @@ DO NOT show on website:
 ```
 
 **CTA Example:**
-> "Curious what AI can do for your business? Book a free 30-minute consultation for a custom proposal."
+> "Curious what AI can do for your business? Book a free 60-minute AI Audit for a custom proposal."
 
 ---
 
@@ -287,8 +287,8 @@ DO NOT show on website:
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   "Get Your AI System Live in 7 Days                        │
-│    or We Build It FREE"                                     │
+│   "Get Your AI System Live in 7 Days.                       │
+│    EZmate AI Experts Handle Everything."                    │
 │                                                             │
 │   + 30-Day Money-Back Guarantee                             │
 │   + ROI Guarantee: See 3X Your Investment                   │
@@ -466,7 +466,7 @@ Commercial Email (C Group) ❌       Personal Email (P Group) ✅
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  1. AI AUDIT (Free 30 min)                            │
+│  1. AI AUDIT (Free 60 min)                            │
 │     └─ Identify pain points, assess scale/budget            │
 │                                                             │
 │  2. AI AUDIT (Optional, $297)                               │

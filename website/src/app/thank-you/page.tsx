@@ -55,7 +55,7 @@ export default function ThankYouPage() {
               </svg>
             </a>
             <p className="text-sm text-gray-500 mt-3">
-              30 minutes | No obligation | Custom AI recommendations
+              60 minutes | No obligation | Custom AI recommendations
             </p>
           </div>
         </div>

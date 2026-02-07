@@ -38,9 +38,9 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">4. Paid Services</h2>
             <p>
-              For paid services, specific terms and pricing will be provided during the Discovery
-              Call and outlined in a separate service agreement. Our guarantees (7-day delivery,
-              30-day money-back, 90-day ROI) apply as described on our website.
+              For paid services, specific terms and pricing will be provided during the AI
+              Audit and outlined in a separate service agreement. Our guarantees (30-day money-back,
+              90-day ROI) apply as described on our website.
             </p>
           </section>
 

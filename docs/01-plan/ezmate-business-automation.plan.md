@@ -206,7 +206,7 @@ Analyze this lead's assessment responses and provide:
    - Reference their specific pain points
    - Use their business name and industry
    - Include specific ROI projections for THEIR business
-   - Include the Godfather Offer (7-day delivery, 30-day money-back, 90-day ROI guarantee)
+   - Include the Godfather Offer (30-day money-back, 90-day ROI guarantee)
 
 Lead Assessment Data:
 {assessment_responses}
@@ -253,8 +253,7 @@ Package: {recommended_package}
 Investment: ${price}/month
 Estimated ROI: {X}% within 90 days
 
-🛡️ OUR GUARANTEE:
-- Live in 7 days or we build it free
+🛡️ OUR DOUBLE-LAYER GUARANTEE:
 - 30-day money-back, no questions asked
 - 90-day ROI guarantee
 

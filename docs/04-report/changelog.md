@@ -24,7 +24,7 @@ All notable changes to the ezmate.ai project are documented here.
   - Why Free section (transparency messaging)
   - Our Services section (3 service cards)
   - Social proof / testimonials section
-  - Guarantee section (triple guarantee messaging)
+  - Guarantee section (double-layer guarantee messaging)
   - FAQ section with interactive accordion (8+ questions)
   - Final CTA section
   - Email subscription form (inline)

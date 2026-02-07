@@ -215,7 +215,7 @@ Node Version: 18+
    - Star ratings/badges
 
 10. **Guarantee Section** (Enhancement)
-    - Triple guarantee messaging
+    - Double-layer guarantee messaging
     - "7-day implementation guarantee"
     - "30-day money-back guarantee"
     - Risk reversal psychology
@@ -316,7 +316,7 @@ Node Version: 18+
 | Trust Bar | No | Yes | Enhancement | Stats section with social proof |
 | Why Free Section | No | Yes | Enhancement | Addresses objection and builds trust |
 | Our Services Section | No | Yes | Enhancement | 3 service cards showing range |
-| Guarantee Section | No | Yes | Enhancement | Triple guarantee messaging |
+| Guarantee Section | No | Yes | Enhancement | Double-layer guarantee messaging |
 | FAQ Section | No | Yes | Enhancement | 8+ interactive questions |
 
 **Enhancements Beyond Design** (8 additional sections):

@@ -497,7 +497,7 @@ B) Book a free AI Audit and see what's possible
 
 If you choose B, here's what you get:
 
-→ 30-minute personalized consultation (FREE)
+→ 60-minute personalized AI Audit (FREE)
 → Custom AI roadmap for your business
 → Honest assessment: is AI right for you?
 
@@ -512,7 +512,7 @@ To your success,
 [Founder Name]
 
 P.S. Our Godfather Offer: Your AI system live in 7 days
-or we build it free. 30-day money-back guarantee.
+EZmate AI experts handle everything. 30-day money-back guarantee.
 Zero risk.
 ```
 

@@ -132,7 +132,7 @@ Chapter 7: Your Two Options                             (3 pages)
 THE OFFER: Your Free AI Audit                     (2 pages)
   - What you get on the call (personalized AI roadmap)
   - Our Godfather Offer:
-    → AI system live in 7 days or we build it free
+    → AI system live in 7 days, experts handle everything
     → 30-day money-back guarantee
     → 90-day ROI guarantee
   - Social proof: 3 testimonials
@@ -616,8 +616,7 @@ Total: ~12 hours over 7 days (realistically 2-4 weeks with learning curve)
 - ✅ Deployed to YOUR website, YOUR phone number, YOUR channels
 - ✅ Tested and optimized before go-live
 
-**Our guarantee (triple protection):**
-- 🛡️ **7-Day Delivery** — Your AI system live in 7 days, or we build it free
+**Our guarantee (double-layer protection):**
 - 🛡️ **30-Day Money-Back** — Not satisfied? Full refund, no questions asked
 - 🛡️ **90-Day ROI Guarantee** — If you don't see measurable ROI, we keep working for free
 
@@ -654,7 +653,7 @@ Total: ~12 hours over 7 days (realistically 2-4 weeks with learning curve)
 >
 > Book a **Free AI Audit** and get:
 >
-> **1. Personalized AI Roadmap** (30-minute call)
+> **1. Personalized AI Roadmap** (60-minute call)
 > - We analyze your specific business
 > - Identify your biggest automation opportunities
 > - Show you exactly what we'd build and the expected ROI
@@ -671,7 +670,7 @@ Total: ~12 hours over 7 days (realistically 2-4 weeks with learning curve)
 >
 > ### Our Godfather Offer:
 > "Your complete AI system — chatbot, voice agent, and automation —
-> **live in 7 days or we build it free.**
+> **live in 7 days. EZmate AI experts handle everything, make things easy for you.**
 > 30-day money-back guarantee. 90-day ROI guarantee. Zero risk."
 
 **Page 2 — Social Proof + CTA:**
@@ -699,7 +698,7 @@ FAQ:
 │                                                      │
 │     Or email us: hello@ezmate.ai                     │
 │                                                      │
-│     "30 minutes that could save you 20+ hours        │
+│     "60 minutes that could save you 20+ hours        │
 │      every week. What do you have to lose?"          │
 │                                                      │
 └─────────────────────────────────────────────────────┘

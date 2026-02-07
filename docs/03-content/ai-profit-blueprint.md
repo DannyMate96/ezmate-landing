@@ -30,10 +30,10 @@ By ezmate.ai
 *See exactly how much you will save.* A fill-in-the-blank worksheet that calculates your time savings, lead capture improvement, and 90-day ROI projection. The numbers do not lie, and they will surprise you.
 
 ## Chapter 7: Your Two Options
-*The DIY path or the done-for-you path.* We lay out both options side by side. Option A: follow the 7-day roadmap and build it yourself. Option B: let our team build your entire AI system in 7 days with a triple guarantee. The math makes the decision easy.
+*The DIY path or the done-for-you path.* We lay out both options side by side. Option A: follow the 7-day roadmap and build it yourself. Option B: let our team build your entire AI system in 7 days with a double-layer guarantee. The math makes the decision easy.
 
 ## The Offer: Your Free AI Audit
-*30 minutes that could save you 20+ hours every week.* Book a free call, get a personalized AI roadmap, see a custom demo for your business, and learn exactly what it costs. Our Godfather Offer: live in 7 days or we build it free. 30-day money-back. 90-day ROI guarantee. Zero risk.
+*60 minutes that could save you 20+ hours every week.* Book a free call, get a personalized AI roadmap, see a custom demo for your business, and learn exactly what it costs. Our Godfather Offer: your complete AI system live in 7 days. 30-day money-back. 90-day ROI guarantee. Zero risk.
 
 ---
 ---
@@ -1583,13 +1583,11 @@ That is what we do at ezmate.ai.
 
 **Your timeline: 7 days.** From the AI Audit call to a fully operational AI system. Not 2 to 4 weeks. Seven days.
 
-**Our guarantee? Triple protection:**
+**Our guarantee? Double-layer protection:**
 
-**Guarantee 1: 7-Day Delivery.** Your complete AI system will be live and operational within 7 days of your AI Audit call. If we miss this deadline, we build it for free.
+**Guarantee 1: 30-Day Money-Back.** If you are not completely satisfied with your AI system within the first 30 days, we refund 100% of your investment. No questions asked. No hoops to jump through.
 
-**Guarantee 2: 30-Day Money-Back.** If you are not completely satisfied with your AI system within the first 30 days, we refund 100% of your investment. No questions asked. No hoops to jump through.
-
-**Guarantee 3: 90-Day ROI Guarantee.** If you do not see measurable, verifiable ROI within 90 days, we continue working on your system at no additional cost until you do. We are not successful unless you are successful.
+**Guarantee 2: 90-Day ROI Guarantee.** If you do not see measurable, verifiable ROI within 90 days, we continue working on your system at no additional cost until you do. We are not successful unless you are successful.
 
 ---
 
@@ -1649,7 +1647,7 @@ Now it is time to act.
 
 # The Offer: Your Free AI Audit
 
-30 minutes that could save you 20+ hours every week.
+60 minutes that could save you 20+ hours every week.
 
 ---
 
@@ -1659,15 +1657,15 @@ This is not a sales pitch disguised as a consultation. This is a genuine audit o
 
 **Here is what happens during your Free AI Audit:**
 
-**1. Current Workflow Analysis (10 minutes)**
+**1. Current Workflow Analysis (20 minutes)**
 
 We map out how your business currently handles customer inquiries, phone calls, follow-ups, and scheduling. We identify the bottlenecks, the time sinks, and the places where leads are falling through the cracks.
 
-**2. AI Opportunity Assessment (10 minutes)**
+**2. AI Opportunity Assessment (20 minutes)**
 
 Based on your specific workflow, we show you exactly which tasks can be automated, which tools would handle them, and what the expected impact would be. No generic advice. Everything is specific to your business, your industry, and your current situation.
 
-**3. Custom AI Roadmap and ROI Projection (10 minutes)**
+**3. Custom AI Roadmap and ROI Projection (20 minutes)**
 
 You walk away with a clear, actionable plan: what we would build, how long it would take, what it would cost, and what ROI you can expect in the first 90 days. Whether you decide to work with us or do it yourself, this roadmap is yours to keep.
 
@@ -1677,13 +1675,13 @@ You walk away with a clear, actionable plan: what we would build, how long it wo
 
 We call this our Godfather Offer because it is designed to be impossible to refuse.
 
-**Your complete AI system, including chatbot, voice agent, and full automation, live in 7 days. Or we build it for free.**
+**Your complete AI system, including chatbot, voice agent, and full automation, live in 7 days. EZmate AI experts handle everything, make things easy for you.**
 
 Plus:
 
 - **30-day money-back guarantee.** Not satisfied? Full refund. No questions asked.
 - **90-day ROI guarantee.** No measurable ROI? We keep working for free until you see it.
-- **Zero risk.** You either get a fully operational AI system that saves you time and makes you money, or you pay nothing.
+- **Zero risk.** You either get a fully operational AI system that saves you time and makes you money, or you get your money back.
 
 We can make this guarantee because we have done this hundreds of times. We know what works. We know what does not. And we are confident enough in our work to put our money where our mouth is.
 
@@ -1729,7 +1727,7 @@ Now you have a choice.
 
 You can close this guide and go back to answering the same customer questions for the hundredth time, missing calls while you are busy, and spending your evenings on follow-up emails instead of with your family.
 
-Or you can take 30 minutes to find out exactly how AI can transform your business.
+Or you can take 60 minutes to find out exactly how AI can transform your business.
 
 **Book your Free AI Audit today.**
 
@@ -1742,7 +1740,7 @@ Or you can take 30 minutes to find out exactly how AI can transform your busines
 │                                                       │
 │         📧  hello@ezmate.ai                          │
 │                                                       │
-│         "30 minutes that could save you               │
+│         "60 minutes that could save you               │
 │          20+ hours every week.                        │
 │          What do you have to lose?"                   │
 │                                                       │
