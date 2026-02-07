@@ -796,3 +796,275 @@ That is exactly what we solve in the next chapter.
 ---
 
 *[Continue to Chapter 4: Build Your AI Voice Agent →]*
+
+---
+---
+
+# Chapter 4: Build Your AI Voice Agent
+
+Never miss a phone call again.
+
+In the last chapter, you built an AI chatbot that handles text conversations on your website. That covers a huge part of your customer interactions. But there is one channel that text simply cannot replace: the phone.
+
+Despite the rise of messaging and email, **68% of customers still prefer to pick up the phone when they need help with something urgent.** When someone has a leaking pipe, a toothache, or a question about a property they want to buy today, they do not want to type. They want to talk.
+
+The problem is, you cannot answer every call. You are meeting with clients. You are on another call. It is 7 PM and you are having dinner with your family. The phone rings, goes to voicemail, and that potential customer moves on to the next business in their search results.
+
+That is where your AI voice agent comes in.
+
+In this chapter, I will show you how to set up Retell AI so that every single call to your business gets answered in under 3 seconds, 24 hours a day, 7 days a week. Not by a robotic menu system. By an AI that sounds and responds like a real, friendly human being.
+
+---
+
+## Why Voice AI Is a Game Changer
+
+Let me share a few numbers that put this into perspective.
+
+**The average small business misses 40% of incoming calls.** That is not because they do not care. It is because they are busy doing their actual job. A plumber cannot answer the phone while fixing a pipe. A dentist cannot pick up mid-procedure. A real estate agent in a showing cannot step out to take a call.
+
+But here is the part that hurts: **78% of customers buy from the first business that responds.** Not the cheapest. Not the best reviewed. The first one to pick up.
+
+Every missed call is not just a missed conversation. It is a missed sale that went straight to your competitor.
+
+Now imagine this instead:
+
+1. A potential customer calls your business at 6:30 PM on a Thursday.
+2. Your AI voice agent picks up in 2 seconds: "Hi, thanks for calling [Business Name]. How can I help you today?"
+3. The caller asks about pricing for a kitchen renovation.
+4. The AI provides a general price range, explains the process, and asks if they would like to book a free consultation.
+5. The caller says yes. The AI books an appointment for Monday at 10 AM, confirms the details, and sends a confirmation text.
+6. You get a notification on your phone with the caller's name, number, and what they need.
+
+You did not hear the phone ring. You were at dinner. But you just booked a $15,000 job.
+
+That is voice AI.
+
+---
+
+## Setting Up Retell AI Step by Step
+
+Retell AI is the platform we use and recommend for building AI voice agents. It is purpose-built for business phone calls, and the setup process is designed for non-technical users.
+
+Here is how to get started:
+
+### Step 1: Create Your Retell AI Account
+
+Go to retellai.com and sign up. You will get access to the dashboard where you can build, test, and manage your voice agents. There is a free trial with enough credits to build and test your first agent.
+
+### Step 2: Choose Your AI Voice
+
+Retell AI offers a library of voices to choose from. You will hear options ranging from warm and friendly to professional and authoritative. Pick one that matches your brand personality.
+
+A few tips for choosing the right voice:
+
+- **Service businesses** (plumbing, dental, salon): Go with warm and conversational
+- **Professional services** (law, finance, consulting): Go with calm and authoritative
+- **Retail and hospitality**: Go with upbeat and enthusiastic
+
+You can always change the voice later, so do not overthink this step.
+
+### Step 3: Design Your Conversation Flow
+
+This is the core of your voice agent. You are essentially scripting how the AI should handle a phone call from start to finish. Retell AI uses a visual conversation builder where you design the flow by connecting blocks.
+
+A basic inbound call flow looks like this:
+
+```
+Greeting
+  → "Thanks for calling [Business]. How can I help you today?"
+
+Identify Caller Need
+  → Listen to what they say
+  → Route to the right response
+
+Handle FAQ
+  → Answer common questions (pricing, hours, services, location)
+
+Qualify the Caller
+  → "Can I grab your name?"
+  → "What is the best number to reach you?"
+  → "What specifically are you looking for help with?"
+
+Book Appointment
+  → "I can schedule a free consultation for you. What day works best?"
+  → Confirm date, time, and details
+
+Closing
+  → "You are all set! You will receive a confirmation text shortly.
+     Is there anything else I can help with?"
+
+Transfer to Human
+  → If the AI cannot handle the request:
+     "Let me connect you with someone who can help."
+```
+
+### Step 4: Set Up Your Phone Number
+
+Retell AI lets you either get a new phone number or forward your existing business number to the AI agent. Most businesses choose to forward calls so their customers keep calling the same number they already know.
+
+The setup process:
+
+- **New number:** Retell AI assigns you a local or toll-free number in minutes
+- **Existing number:** Set up call forwarding from your current provider to your Retell AI number. This typically takes a single settings change in your phone provider's dashboard.
+
+You can also set rules for when calls get forwarded to AI. For example: forward to AI only after 3 rings (giving you a chance to pick up first), or forward all calls during after-hours, or forward all calls always.
+
+### Step 5: Configure Business Hours and Fallback Behavior
+
+Tell your voice agent what to do in different situations:
+
+- **During business hours:** Answer, help, book appointments, offer to transfer to a human
+- **After hours:** Answer, help, book appointments, let the caller know a team member will follow up in the morning
+- **When the AI cannot help:** Transfer to your cell phone, take a detailed message, or offer to have someone call back
+
+### Step 6: Test Extensively Before Going Live
+
+This step is critical. Call your AI agent yourself. Have friends call it. Have a family member call it pretending to be a customer. Test every scenario you can think of:
+
+- Simple questions ("What are your hours?")
+- Complex questions ("I need a quote for a 3-bedroom house repaint with some drywall repair")
+- Edge cases ("Can I speak to a manager?")
+- Difficult callers ("I'm not sure what I need")
+
+Listen for awkward pauses, incorrect information, or moments where the AI sounds confused. Each issue you catch during testing is a customer experience you saved in production.
+
+---
+
+## 3 Voice Agent Use Cases
+
+Here are the three most valuable ways businesses use their AI voice agent, with script templates for each.
+
+### Use Case 1: Inbound Call Handling
+
+This is the primary use case. Every call to your business gets answered immediately, handled professionally, and converted into a lead or appointment.
+
+**Script Template:**
+
+```
+AI: "Good [morning/afternoon], thanks for calling [Business Name].
+     My name is [AI Name]. How can I help you today?"
+
+Caller: [States their need]
+
+AI: "Absolutely, I can help with that. [Provide relevant information
+     about the service they asked about.]
+
+     Would you like me to schedule a free consultation so we can
+     discuss the details of your specific situation?"
+
+Caller: "Yes, that would be great."
+
+AI: "Perfect. Can I get your name?"
+    → [Collect name]
+    "And the best phone number to reach you?"
+    → [Collect number]
+    "Great. I have [Day] at [Time] or [Day] at [Time] available.
+     Which works better for you?"
+    → [Confirm booking]
+    "You are all set, [Name]. You will get a confirmation text
+     in just a moment. Is there anything else I can help with?"
+```
+
+### Use Case 2: Appointment Reminders (Outbound)
+
+No-shows are expensive. A missed appointment means wasted time, lost revenue, and a gap in your schedule that could have been filled by another paying customer. AI voice agents can call your customers automatically to confirm their appointments.
+
+**Script Template:**
+
+```
+AI: "Hi [Name], this is [AI Name] calling from [Business Name].
+     I am calling to confirm your appointment on [Day] at [Time].
+
+     Can you confirm you will be there?"
+
+If YES:
+AI: "Wonderful, we look forward to seeing you.
+     Is there anything you need to prepare or bring?"
+
+If RESCHEDULE:
+AI: "No problem at all. I have [Day] at [Time] or [Day] at [Time]
+     available. Would either of those work for you?"
+    → [Rebook and confirm]
+
+If CANCEL:
+AI: "I understand. Would you like me to schedule a new appointment
+     for a later date, or would you prefer to call us back when
+     you are ready?"
+```
+
+**The impact:** Businesses that implement automated appointment reminders see a **30 to 40% reduction in no-shows.** For a business that books 20 appointments per week, that could mean recovering 6 to 8 appointments per week that would have otherwise been empty slots.
+
+### Use Case 3: Missed Lead Follow-Up (Outbound)
+
+This is the use case most businesses overlook. When someone visits your website, clicks around, maybe starts filling out a form but does not complete it, that is a warm lead. An AI voice agent can call them within minutes to re-engage.
+
+**Script Template:**
+
+```
+AI: "Hi, this is [AI Name] from [Business Name]. I noticed you
+     were recently on our website looking at [service/page].
+
+     I wanted to reach out and see if you had any questions
+     I could help with?"
+
+If INTERESTED:
+AI: "Great! [Answer their questions, provide relevant info.]
+     Would you like to schedule a time to chat with our team
+     in more detail?"
+
+If NOT INTERESTED:
+AI: "No worries at all. If anything changes, feel free to call
+     us anytime at [number]. Have a great day!"
+```
+
+**The impact:** Following up within 5 minutes of a website visit makes you **100x more likely** to qualify that lead compared to waiting 30 minutes. An AI voice agent makes 5-minute follow-up the default, not the exception.
+
+---
+
+## Real Example: Dental Clinic
+
+Here is what happened when a dental clinic with 3 locations implemented an AI voice agent using Retell AI.
+
+**The Problem:**
+
+The clinic had 4 front desk staff across 3 locations handling an average of 120 calls per day. Despite their best efforts, 40% of calls went to voicemail during peak hours and after hours. Patients who could not get through would often book with a competitor instead. No-shows averaged 22% of all appointments, costing the practice thousands in lost revenue every month.
+
+**The Solution:**
+
+They deployed a Retell AI voice agent to handle all inbound calls. The AI was trained on their specific services, insurance policies, and appointment availability across all 3 locations.
+
+**The Results After 90 Days:**
+
+| Metric | Before | After | Change |
+|--------|--------|-------|--------|
+| Calls answered | 60% | 100% | +40% |
+| Average response time | 45 seconds + hold | 2 seconds | 95% faster |
+| No-show rate | 22% | 13% | 40% reduction |
+| New patient bookings per month | 85 | 140 | +65% |
+| Front desk hours spent on phone | 30 hrs/week | 8 hrs/week | 22 hrs saved |
+| Monthly phone-related costs | $8,500 | $4,000 | $4,500 saved |
+
+The front desk staff did not lose their jobs. They were freed up to focus on in-person patient care, insurance processing, and follow-ups that actually required a human touch. The AI handled the repetitive calls. The humans handled the work that matters.
+
+---
+
+## Chapter Summary
+
+Here is what you learned in this chapter:
+
+- Why phone calls still matter (68% of urgent customers prefer calling)
+- How to set up Retell AI in 6 steps, from account creation to testing
+- 3 voice agent use cases with complete script templates (inbound handling, appointment reminders, missed lead follow-up)
+- Real results from a dental clinic that reduced no-shows by 40% and saved $4,500 per month
+
+You now have two AI employees: a chatbot handling text conversations on your website and a voice agent handling phone calls 24/7. The final piece of the puzzle is connecting them together so they work as one system.
+
+That is what Make.com does. And that is what we cover next.
+
+---
+
+> **Voice AI requires careful scripting and extensive testing to sound natural on real phone calls.** Getting the tone wrong can hurt your brand instead of helping it. Our team has built voice agents for 16+ industries and knows exactly what works. Skip to Chapter 7 to learn about our Done-For-You service.
+
+---
+
+*[Continue to Chapter 5: Connect Everything with Make.com →]*
