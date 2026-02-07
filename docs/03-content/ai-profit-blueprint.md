@@ -1068,3 +1068,292 @@ That is what Make.com does. And that is what we cover next.
 ---
 
 *[Continue to Chapter 5: Connect Everything with Make.com →]*
+
+---
+---
+
+# Chapter 5: Connect Everything with Make.com
+
+The "Set and Forget" automation framework.
+
+You now have two powerful AI tools: a Claude chatbot capturing leads on your website and a Retell AI voice agent answering every phone call. Individually, they are doing great work. But right now, they are working in isolation.
+
+Your chatbot captures a lead. Then what? You have to manually check the dashboard, copy the information, paste it into your CRM, and send a follow-up email yourself. Your voice agent books an appointment. Then what? You have to manually send a confirmation, set a reminder, and follow up after the visit.
+
+All that manual work in between defeats the purpose of having AI in the first place.
+
+This chapter fixes that. Make.com is the automation engine that connects your chatbot, voice agent, CRM, email, calendar, and every other tool you use into one seamless system. Once it is set up, everything happens automatically. A lead comes in, and the entire workflow fires without you touching a thing.
+
+This is where your business truly starts running itself.
+
+---
+
+## The Automation Framework
+
+Before we start building, let me explain the framework we use for every automation project. It is four steps:
+
+**1. Identify the trigger.** What event starts the workflow? (A new lead, a missed call, an appointment booking, etc.)
+
+**2. Define the actions.** What should happen when that trigger fires? (Save to CRM, send email, notify you, schedule follow-up, etc.)
+
+**3. Build and test.** Create the workflow in Make.com and test it with real data.
+
+**4. Monitor and optimize.** Check weekly that everything is running smoothly, and adjust based on results.
+
+Every automation you build follows this same pattern. Once you understand it, you can automate almost anything.
+
+---
+
+## Building Your First Automation Workflow
+
+Let me walk you through building your first workflow step by step. We will start with the most impactful one: the Lead Capture Pipeline.
+
+### What This Workflow Does
+
+When your chatbot captures a new lead, this workflow automatically:
+
+1. Saves the lead's information to your CRM (or Google Sheets)
+2. Sends a personalized welcome email
+3. Sends you an instant notification on Slack or SMS
+4. Schedules an automated follow-up email for 24 hours later
+
+### Step-by-Step Setup
+
+**Step 1: Create Your Make.com Account**
+
+Go to make.com and sign up. The free plan gives you 1,000 operations per month, which is enough to get started and test your workflows. An "operation" is a single action within a workflow (like saving a contact or sending an email).
+
+**Step 2: Create a New Scenario**
+
+Make.com calls each workflow a "Scenario." Click "Create a new scenario" from your dashboard. You will see a blank canvas with a visual editor.
+
+**Step 3: Add Your Trigger**
+
+Click the "+" button and search for your trigger. For this workflow, the trigger is a Webhook. A webhook is simply a URL that receives data when an event happens. When your chatbot captures a lead, it sends that lead's information to this webhook URL.
+
+Select "Webhooks" and choose "Custom webhook." Make.com will generate a unique URL for you. Copy this URL. You will paste it into your chatbot's configuration so it knows where to send lead data.
+
+**Step 4: Add Action 1 — Save to CRM**
+
+Click the "+" after your trigger and add your CRM tool. If you use Google Sheets (a great free option for getting started), search for "Google Sheets" and select "Add a Row." Connect your Google account, select your spreadsheet, and map the lead data (name, email, phone, what they need) to the correct columns.
+
+If you use HubSpot, Salesforce, or another CRM, the process is the same. Search for the tool, connect your account, and map the data.
+
+**Step 5: Add Action 2 — Send Welcome Email**
+
+Click "+" again and add your email tool. Gmail, Mailchimp, ConvertKit, or any email tool you already use. Create a welcome email template:
+
+```
+Subject: Thanks for reaching out, [First Name]!
+
+Hi [First Name],
+
+Thanks for contacting [Business Name]. We received your inquiry
+and wanted to confirm that we are on it.
+
+Here is what happens next:
+  1. A member of our team will review your request
+  2. We will get back to you within [timeframe]
+  3. If you need immediate assistance, you can book a
+     time to chat here: [booking link]
+
+Looking forward to helping you!
+
+Best,
+[Your Name]
+[Business Name]
+```
+
+Map the lead's name and email into the template fields.
+
+**Step 6: Add Action 3 — Notify Yourself**
+
+Add a Slack message or SMS notification so you know the moment a new lead comes in. This is especially useful for high-value leads. Your notification might look like:
+
+```
+🔔 New Lead Alert!
+Name: [Lead Name]
+Email: [Lead Email]
+Need: [What they asked about]
+Source: Website Chatbot
+Time: [Timestamp]
+```
+
+**Step 7: Add Action 4 — Schedule Follow-Up**
+
+Add a delay module (Make.com calls it "Sleep") set to 24 hours, followed by another email action. This sends an automatic follow-up to leads who have not booked an appointment yet:
+
+```
+Subject: Quick follow-up, [First Name]
+
+Hi [First Name],
+
+I wanted to follow up on your inquiry from yesterday.
+
+If you still have questions or want to discuss how we can help,
+I am happy to chat. You can book a free consultation here:
+[booking link]
+
+No pressure at all. Just want to make sure you have
+everything you need.
+
+Best,
+[Your Name]
+```
+
+**Step 8: Test and Activate**
+
+Run a test by sending sample data through your webhook. Watch each step execute in real time on the Make.com canvas. If everything works correctly, toggle the scenario to "Active." It is now running 24/7.
+
+---
+
+## 5 Ready-to-Use Workflow Templates
+
+Beyond the Lead Capture Pipeline, here are four more workflows that our clients use most often. Each one follows the same Trigger → Action pattern.
+
+### Template 1: Lead Capture Pipeline
+
+```
+Trigger:  New lead from chatbot (webhook)
+Action 1: Save to CRM / Google Sheets
+Action 2: Send welcome email
+Action 3: Notify owner (Slack / SMS)
+Action 4: Schedule 24-hour follow-up email
+```
+*You just built this one above.*
+
+### Template 2: Missed Call Recovery
+
+```
+Trigger:  Missed call detected (Retell AI webhook)
+Action 1: Send SMS to caller within 60 seconds
+          "Hi, we missed your call. How can we help?
+           Chat with us here: [chatbot link]"
+Action 2: Save caller info to CRM
+Action 3: Notify owner with caller details
+Action 4: If no response in 2 hours, send follow-up SMS
+```
+
+*Why it matters:* This workflow recovers leads that would have been completely lost. The caller gets a response within 60 seconds of the missed call, which keeps them engaged instead of moving on to your competitor.
+
+### Template 3: Appointment Lifecycle
+
+```
+Trigger:  New appointment booked (Calendar webhook)
+Action 1: Send confirmation email immediately
+Action 2: Send reminder email 24 hours before
+Action 3: Send reminder SMS 1 hour before
+Action 4: After appointment, send thank-you email
+Action 5: 24 hours after appointment, send review request
+```
+
+*Why it matters:* This single workflow handles the entire appointment lifecycle from booking to post-visit follow-up. No more manually sending reminders. No more forgetting to ask for reviews.
+
+### Template 4: Review Request Sequence
+
+```
+Trigger:  Service marked as completed (CRM update)
+Action 1: Wait 24 hours
+Action 2: Send review request email with direct link
+          to Google Reviews / Yelp / Facebook
+Action 3: If no review in 3 days, send friendly SMS reminder
+Action 4: Log review request status in CRM
+```
+
+*Why it matters:* Online reviews are the lifeblood of local businesses. This workflow automates the ask so you never forget, and the 24-hour delay means you reach the customer while their experience is still fresh.
+
+### Template 5: Weekly Business Report
+
+```
+Trigger:  Every Monday at 8:00 AM (scheduled)
+Action 1: Pull data from CRM (new leads this week)
+Action 2: Pull data from Retell AI (calls handled)
+Action 3: Pull data from calendar (appointments booked)
+Action 4: Compile into summary report
+Action 5: Email report to owner
+```
+
+*Why it matters:* Instead of logging into 5 different dashboards every Monday, you get a single email with everything you need to know about last week's performance.
+
+---
+
+## Connecting All 3 Tools Into One System
+
+Now let us zoom out and look at the complete picture. When all three tools are connected through Make.com, your business operates like this:
+
+```
+CUSTOMER JOURNEY (fully automated):
+
+Website Visit
+  → Claude Chatbot answers questions, captures lead
+  → Make.com saves to CRM, sends welcome email, notifies you
+
+Phone Call
+  → Retell AI answers, qualifies caller, books appointment
+  → Make.com saves to CRM, sends confirmation, notifies you
+
+After Booking
+  → Make.com sends reminders (24hr + 1hr before)
+  → After visit: thank-you email + review request
+
+If Lead Goes Cold
+  → Make.com sends follow-up sequence (Day 1, Day 3, Day 7)
+  → Keeps lead warm until they are ready to buy
+
+Weekly
+  → Make.com sends you a performance report every Monday
+```
+
+**Every step is automatic.** You only get involved when a customer is ready to meet with you or when a situation requires a human touch.
+
+This is what a truly automated business looks like.
+
+---
+
+## The Maintenance Reality
+
+I want to be honest with you. Setting up these automations is not a one-time task and then you forget about them forever. AI systems need regular attention to perform at their best.
+
+**Weekly check (15 to 30 minutes):**
+
+- Review your Make.com dashboard for any failed executions
+- Check chatbot conversation logs for questions it struggled to answer
+- Review voice agent call recordings for quality
+- Update any information that has changed (new services, pricing, hours)
+
+**Monthly review (1 hour):**
+
+- Analyze lead conversion rates across channels
+- Identify the most common customer questions and add them to your chatbot
+- Review voice agent scripts based on real call patterns
+- Optimize email templates based on open and click rates
+
+A well-maintained AI system improves over time. Every week you review the data and make small adjustments, the system gets a little smarter, a little more accurate, and a little more effective.
+
+A neglected AI system degrades. Outdated information, unhandled edge cases, and broken integrations pile up until the system causes more frustration than it solves.
+
+The difference between the two is 30 minutes a week.
+
+---
+
+## Chapter Summary
+
+Here is what you accomplished in this chapter:
+
+- Learned the 4-step automation framework (Identify, Define, Build, Monitor)
+- Built your first complete workflow: the Lead Capture Pipeline
+- Got 5 ready-to-use workflow templates for the most common business automations
+- Understood how all 3 tools connect into one fully automated system
+- Got a realistic view of the maintenance required to keep everything running
+
+You now have the complete blueprint. A Claude chatbot on your website, a Retell AI voice agent on your phone, and Make.com connecting everything together into one automated machine.
+
+The question is: is it worth it? How much will this actually save you? That is exactly what we calculate in the next chapter.
+
+---
+
+> **Setting up 3 tools and connecting them through automation workflows can take weeks of trial and error.** API connections, webhook configurations, error handling, and edge cases add up quickly. Our clients skip all of that and go live in 7 days, fully tested and optimized. Skip to Chapter 7 to learn how.
+
+---
+
+*[Continue to Chapter 6: Your AI ROI Calculator →]*
