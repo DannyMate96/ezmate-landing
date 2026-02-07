@@ -74,12 +74,24 @@ export default function LandingPage() {
     businessType: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    console.log('Form submitted:', formData)
-    window.location.href = '/thank-you'
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      if (!res.ok) throw new Error('Subscribe failed')
+      window.location.href = '/thank-you'
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setIsSubmitting(false)
+      alert('Something went wrong. Please try again.')
+    }
   }
 
   return (
@@ -98,7 +110,7 @@ export default function LandingPage() {
                 </h1>
 
                 <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
-                  The free blueprint reveals the exact AI automation system that 500+ Australian SMBs
+                  The free blueprint reveals the exact AI automation system that 500+ businesses
                   are using to respond to every inquiry in <strong className="text-white">under 30 seconds</strong>, 24/7.
                 </p>
 
@@ -113,8 +125,8 @@ export default function LandingPage() {
               </div>
 
               {/* Right: Book */}
-              <div className="flex justify-center lg:justify-end animate-fade-in-up delay-200">
-                <BookImage className="w-48 sm:w-56 md:w-64" />
+              <div className="flex justify-center lg:justify-center animate-fade-in-up delay-200">
+                <BookImage className="w-56 sm:w-64 md:w-72 lg:w-80" />
               </div>
             </div>
           </div>
@@ -177,7 +189,7 @@ export default function LandingPage() {
               </div>
 
               <p>
-                But here is the problem most Australian business owners face:
+                But here is the problem most business owners face:
               </p>
 
               <div className="space-y-4 my-8">
@@ -283,75 +295,94 @@ export default function LandingPage() {
 
               <p>
                 That is when I realised this was not just a one-off success. This system could
-                work for almost any service-based business in Australia.
+                work for almost any service-based business.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Social Proof Section */}
-        <section className="section-padding bg-[#0a0f1a]">
+        {/* The Solution - What The Blueprint Teaches You */}
+        <section className="section-padding bg-[#0f172a]">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="badge badge-green mb-4">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-                Real Results
+                The Solution
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Do Not Take My Word For It...
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                This Blueprint Will Guide You How To Solve These Problems Yourself
               </h2>
+              <p className="text-gray-400 max-w-2xl mx-auto">
+                You do not need to be technical. Inside the AI Profit Blueprint,
+                you will learn exactly how three proven AI tools can eliminate these pain points — and
+                how to set them up step by step.
+              </p>
             </div>
 
-            <div className="space-y-6">
-              {[
-                {
-                  quote: "I was skeptical. Really skeptical. I had tried chatbots before and they were terrible. But this was different. Within the first week, the AI booked 4 property viewings while I was asleep. ASLEEP. One of those turned into a $1.2M sale. The ROI is insane.",
-                  name: "Sarah Mitchell",
-                  role: "Real Estate Agent",
-                  location: "Melbourne VIC",
-                  result: "$1.2M sale from AI-booked lead",
-                  initials: "SM",
-                  color: "bg-primary"
-                },
-                {
-                  quote: "We run an e-commerce store and were drowning in customer service inquiries. Returns, shipping questions, product questions... it was killing us. Now the AI handles 80% of it automatically. My team can actually focus on growth instead of answering the same questions 50 times a day.",
-                  name: "James Thompson",
-                  role: "E-commerce Business Owner",
-                  location: "Sydney NSW",
-                  result: "80% of inquiries automated",
-                  initials: "JT",
-                  color: "bg-green-600"
-                },
-                {
-                  quote: "Patient no-shows were costing us thousands every month. The automated reminder system alone paid for everything within the first 3 weeks. Now patients get confirmation calls, text reminders, and can even reschedule through the AI. Our no-show rate dropped from 23% to 8%.",
-                  name: "Dr. Lisa Chen",
-                  role: "Healthcare Clinic Director",
-                  location: "Brisbane QLD",
-                  result: "No-shows reduced from 23% to 8%",
-                  initials: "LC",
-                  color: "bg-purple-600"
-                },
-              ].map((testimonial, index) => (
-                <div key={index} className="testimonial-card">
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="badge badge-green text-xs">
-                      {testimonial.result}
-                    </span>
-                  </div>
-                  <p className="text-lg mb-6 leading-relaxed text-gray-300">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <div className={`w-12 h-12 ${testimonial.color} rounded-full flex items-center justify-center text-white font-bold`}>
-                      {testimonial.initials}
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">{testimonial.name}</p>
-                      <p className="text-gray-500 text-sm">{testimonial.role}, {testimonial.location}</p>
-                    </div>
-                  </div>
+            <div className="space-y-6 text-gray-400 max-w-3xl mx-auto mb-12">
+              <p>
+                The businesses that are winning right now all have one thing in common: they respond
+                faster, follow up automatically, and never let a lead slip through the cracks.
+              </p>
+              <p>
+                The good news? The tools to do this are now accessible to everyone — not just
+                big companies with big budgets. You just need to know <strong className="text-white">which tools to use</strong> and <strong className="text-white">how to set them up correctly</strong>.
+              </p>
+              <p>
+                That is exactly what this blueprint covers:
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              {/* Chatbot */}
+              <div className="feature-card p-6 text-center">
+                <div className="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mx-auto mb-5">
+                  <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
                 </div>
-              ))}
+                <h3 className="text-lg font-bold text-white mb-2">AI Chatbot</h3>
+                <p className="text-gray-400 text-sm">
+                  Responds to inquiries instantly on your website, WhatsApp, or Messenger — 24/7.
+                </p>
+              </div>
+
+              {/* Voice AI Agent */}
+              <div className="feature-card p-6 text-center">
+                <div className="w-14 h-14 rounded-2xl bg-green-600/20 flex items-center justify-center mx-auto mb-5">
+                  <svg className="w-7 h-7 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Voice AI Agent</h3>
+                <p className="text-gray-400 text-sm">
+                  Answers phone calls, books appointments, and follows up with leads automatically.
+                </p>
+              </div>
+
+              {/* Workflow Automation */}
+              <div className="feature-card p-6 text-center">
+                <div className="w-14 h-14 rounded-2xl bg-purple-600/20 flex items-center justify-center mx-auto mb-5">
+                  <svg className="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">Workflow Automation</h3>
+                <p className="text-gray-400 text-sm">
+                  Connects your tools and eliminates 20+ hours of repetitive admin work per week.
+                </p>
+              </div>
+            </div>
+
+            <div className="highlight-box max-w-3xl mx-auto">
+              <p className="text-gray-200 m-0 text-center">
+                The blueprint includes <span className="text-highlight">copy-paste scripts</span>, a step-by-step setup guide,
+                and a 7-day implementation roadmap so you can start seeing results this week.
+              </p>
+            </div>
+
+            <div className="text-center mt-10">
+              <CTAButton />
             </div>
           </div>
         </section>
@@ -384,7 +415,7 @@ export default function LandingPage() {
               <div className="order-1 lg:order-2">
                 <div className="space-y-3 md:space-y-4">
                   {[
-                    { chapter: 1, title: 'The $50,000 AI Mistake', subtitle: '90% of businesses make this (and how to avoid it)' },
+                    { chapter: 1, title: 'The $50,000 AI Opportunity', subtitle: 'How AI is transforming businesses just like yours' },
                     { chapter: 2, title: 'The Only 3 AI Tools You Need', subtitle: 'Forget the rest - these actually work' },
                     { chapter: 3, title: 'Copy-Paste Chatbot Scripts', subtitle: 'Convert visitors into leads while you sleep' },
                     { chapter: 4, title: 'The "Set & Forget" Framework', subtitle: 'Save 20+ hours every single week' },
@@ -446,7 +477,7 @@ export default function LandingPage() {
                     You boost your business by adapting AI automation on your own.
                   </p>
                   <p className="text-gray-500 mt-4 text-base italic">
-                    Some people actually do this. And I am genuinely happy that I can help people who visited my website.
+                    Some people actually do this. And I am genuinely happy that I can help other people.
                   </p>
                 </div>
                 <div className="feature-card p-8">
@@ -473,19 +504,21 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* What We Do Section - The Solution */}
+        {/* Our Services Section */}
         <section className="section-padding bg-[#0f172a]">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <span className="badge badge-green mb-4">
-                <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-                The Solution
+              <span className="badge badge-orange mb-4">
+                <span className="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
+                Our Services
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Here Is Exactly What We Build For You
+                Do Not Want To Build Yourself?
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto">
-                No cookie-cutter solutions. Every system is custom-built for your specific business needs.
+                No problem, we can build the bespoke solution for your business so you can focus on
+                more important things — scaling your business, or spending more time with family.
+                Reach out to us after you finish reading this book, and I will personally walk you through the details.
               </p>
             </div>
 
@@ -500,18 +533,22 @@ export default function LandingPage() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
-                      <h3 className="text-xl font-bold text-white">AI Chatbot That Actually Converts</h3>
+                      <h3 className="text-xl font-bold text-white">Custom AI Chatbot</h3>
                       <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-primary/20 text-primary">Most Popular</span>
                     </div>
                     <p className="text-gray-400 mb-4">
-                      Forget those robotic chatbots that frustrate your customers. Our AI chatbot has
-                      natural conversations, answers complex questions, qualifies leads, and books
-                      appointments directly into your calendar. It works on your website, WhatsApp,
-                      Facebook Messenger, and SMS - wherever your customers are.
+                      We build a fully customised AI chatbot trained on your business, your services, and your
+                      tone of voice. It handles customer inquiries, qualifies leads, books appointments, and
+                      integrates with your existing tools — website, WhatsApp, Facebook Messenger, and SMS.
+                      Unlike generic chatbots, ours actually understand context and have natural conversations.
                     </p>
-                    <div className="flex items-center gap-2 text-sm">
-                      <span className="text-green-400 font-semibold">Average Result:</span>
-                      <span className="text-gray-300">67% increase in lead capture rate within 30 days</span>
+                    <div className="flex flex-wrap items-center gap-4 text-sm">
+                      <span className="flex items-center gap-2">
+                        <span className="text-green-400 font-semibold">Average Result:</span>
+                        <span className="text-gray-300">67% increase in lead capture</span>
+                      </span>
+                      <span className="text-gray-600">|</span>
+                      <span className="text-gray-400">Live in 7 days</span>
                     </div>
                   </div>
                 </div>
@@ -526,16 +563,20 @@ export default function LandingPage() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3">AI Voice Agent For Phone Calls</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">AI Voice Agent</h3>
                     <p className="text-gray-400 mb-4">
-                      Yes, an AI that answers your phone. It sounds natural, handles inquiries,
-                      schedules appointments, and even makes outbound follow-up calls to leads
-                      you have not had time to contact. No more missed calls. No more voicemail
-                      black holes where leads go to die.
+                      We set up an AI that answers your phone with a natural-sounding voice. It handles
+                      inbound calls, schedules appointments, makes outbound follow-ups, and sends reminders.
+                      No more missed calls, no more voicemail black holes. Your customers get instant service
+                      while you save thousands compared to hiring a full-time receptionist.
                     </p>
-                    <div className="flex items-center gap-2 text-sm">
-                      <span className="text-green-400 font-semibold">Average Result:</span>
-                      <span className="text-gray-300">40% reduction in missed calls and no-shows</span>
+                    <div className="flex flex-wrap items-center gap-4 text-sm">
+                      <span className="flex items-center gap-2">
+                        <span className="text-green-400 font-semibold">Average Result:</span>
+                        <span className="text-gray-300">40% fewer missed calls</span>
+                      </span>
+                      <span className="text-gray-600">|</span>
+                      <span className="text-gray-400">Fraction of the cost of a receptionist</span>
                     </div>
                   </div>
                 </div>
@@ -550,16 +591,20 @@ export default function LandingPage() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3">Workflow Automation</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">End-to-End Workflow Automation</h3>
                     <p className="text-gray-400 mb-4">
-                      All those repetitive tasks eating up your day? Data entry, follow-up emails,
-                      invoice reminders, appointment confirmations... we automate all of it. Your
-                      systems talk to each other automatically, so you can focus on what actually
-                      grows your business.
+                      We connect all your business tools and automate the repetitive work that drains
+                      your time. Data entry, follow-up emails, invoice reminders, appointment confirmations,
+                      CRM updates — all handled automatically. Your systems talk to each other so you can
+                      stop doing admin and start growing your business.
                     </p>
-                    <div className="flex items-center gap-2 text-sm">
-                      <span className="text-green-400 font-semibold">Average Result:</span>
-                      <span className="text-gray-300">15-20 hours saved per week on admin tasks</span>
+                    <div className="flex flex-wrap items-center gap-4 text-sm">
+                      <span className="flex items-center gap-2">
+                        <span className="text-green-400 font-semibold">Average Result:</span>
+                        <span className="text-gray-300">15-20 hours saved per week</span>
+                      </span>
+                      <span className="text-gray-600">|</span>
+                      <span className="text-gray-400">Full setup and ongoing support</span>
                     </div>
                   </div>
                 </div>
@@ -568,6 +613,73 @@ export default function LandingPage() {
 
             <div className="text-center mt-12">
               <CTAButton />
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof Section */}
+        <section className="section-padding bg-[#0a0f1a]">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <span className="badge badge-green mb-4">
+                <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                Real Results
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Do Not Take My Word For It...
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  quote: "I was skeptical. Really skeptical. I had tried chatbots before and they were terrible. But this was different. Within the first week, the AI booked 4 property viewings while I was asleep. ASLEEP. One of those turned into a $1.2M sale. The ROI is insane.",
+                  name: "Sarah Mitchell",
+                  role: "Real Estate Agent",
+                  location: "Melbourne VIC",
+                  result: "$1.2M sale from AI-booked lead",
+                  initials: "SM",
+                  color: "bg-primary"
+                },
+                {
+                  quote: "We run an e-commerce store and were drowning in customer service inquiries. Returns, shipping questions, product questions... it was killing us. Now the AI handles 80% of it automatically. My team can actually focus on growth instead of answering the same questions 50 times a day.",
+                  name: "James Thompson",
+                  role: "E-commerce Business Owner",
+                  location: "Sydney NSW",
+                  result: "80% of inquiries automated",
+                  initials: "JT",
+                  color: "bg-green-600"
+                },
+                {
+                  quote: "Patient no-shows were costing us thousands every month. The automated reminder system alone paid for everything within the first 3 weeks. Now patients get confirmation calls, text reminders, and can even reschedule through the AI. Our no-show rate dropped from 23% to 8%.",
+                  name: "Dr. Lisa Chen",
+                  role: "Healthcare Clinic Director",
+                  location: "Brisbane QLD",
+                  result: "No-shows reduced from 23% to 8%",
+                  initials: "LC",
+                  color: "bg-purple-600"
+                },
+              ].map((testimonial, index) => (
+                <div key={index} className="testimonial-card">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="badge badge-green text-xs">
+                      {testimonial.result}
+                    </span>
+                  </div>
+                  <p className="text-lg mb-6 leading-relaxed text-gray-300">
+                    &ldquo;{testimonial.quote}&rdquo;
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className={`w-12 h-12 ${testimonial.color} rounded-full flex items-center justify-center text-white font-bold`}>
+                      {testimonial.initials}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white">{testimonial.name}</p>
+                      <p className="text-gray-500 text-sm">{testimonial.role}, {testimonial.location}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -705,10 +817,10 @@ export default function LandingPage() {
                   No Spam
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                   </svg>
-                  Unsubscribe Anytime
+                  No Credit Card Required
                 </span>
               </div>
             </form>
@@ -724,7 +836,7 @@ export default function LandingPage() {
               </h2>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {[
                 {
                   q: 'I am not technical at all. Can this still work for me?',
@@ -744,12 +856,22 @@ export default function LandingPage() {
                 },
                 {
                   q: 'What if it does not work for my industry?',
-                  a: 'We have worked across 16 different industries in Australia - from dentists to dog groomers, accountants to auto mechanics. If you have customers who contact you, this can work for you.'
+                  a: 'We have worked across 16 different industries - from dentists to dog groomers, accountants to auto mechanics. If you have customers who contact you, this can work for you.'
                 },
               ].map((faq, index) => (
-                <div key={index} className="feature-card">
-                  <h3 className="font-semibold text-white mb-2">{faq.q}</h3>
-                  <p className="text-gray-400">{faq.a}</p>
+                <div key={index} className="feature-card cursor-pointer" onClick={() => setOpenFaq(openFaq === index ? null : index)}>
+                  <div className="flex items-center justify-between gap-4">
+                    <h3 className="font-semibold text-white">{faq.q}</h3>
+                    <svg
+                      className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}`}
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                  <div className={`overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-96 mt-3 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <p className="text-gray-400">{faq.a}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -772,7 +894,7 @@ export default function LandingPage() {
                 Or you can take 2 minutes to download this free blueprint and discover a better way.
               </p>
               <p className="text-xl text-white font-medium">
-                500+ Australian business owners have already made that choice.
+                500+ business owners have already made that choice.
                 <br />The question is: will you?
               </p>
             </div>
@@ -806,7 +928,7 @@ export default function LandingPage() {
 
           <div className="text-center text-sm text-gray-500">
             <p>© 2026 ezmate.ai. All rights reserved.</p>
-            <p className="mt-2">AI automation solutions for Australian small and medium businesses.</p>
+            <p className="mt-2">AI automation solutions for small and medium businesses.</p>
           </div>
         </div>
       </footer>

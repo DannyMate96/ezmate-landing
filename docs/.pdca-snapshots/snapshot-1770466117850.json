@@ -1,0 +1,617 @@
+{
+  "timestamp": "2026-02-07T12:08:37.850Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-07T12:07:07.677Z",
+    "activeFeatures": [
+      "website",
+      "thank-you",
+      "privacy",
+      "terms",
+      "subscribe"
+    ],
+    "primaryFeature": "website",
+    "features": {
+      "website": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T11:56:14.682Z",
+          "lastUpdated": "2026-02-07T12:07:07.677Z"
+        },
+        "lastFile": "C:\\Users\\user\\ezmate-ai\\website\\src\\app\\page.tsx"
+      },
+      "thank-you": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T11:57:45.882Z",
+          "lastUpdated": "2026-02-05T15:34:46.230Z"
+        },
+        "lastFile": "C:\\Users\\user\\ezmate-ai\\website\\src\\app\\thank-you\\page.tsx"
+      },
+      "privacy": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-07T12:06:31.815Z",
+          "lastUpdated": "2026-02-07T12:06:31.815Z"
+        },
+        "lastFile": "C:\\Users\\user\\ezmate-ai\\website\\src\\app\\privacy\\page.tsx"
+      },
+      "terms": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-07T12:06:43.778Z",
+          "lastUpdated": "2026-02-07T12:06:43.778Z"
+        },
+        "lastFile": "C:\\Users\\user\\ezmate-ai\\website\\src\\app\\terms\\page.tsx"
+      },
+      "subscribe": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-07T12:06:58.623Z",
+          "lastUpdated": "2026-02-07T12:06:58.623Z"
+        },
+        "lastFile": "C:\\Users\\user\\ezmate-ai\\website\\src\\app\\api\\subscribe\\route.ts"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-02-04T17:05:52.638Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-02-07T12:07:07.677Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-05T11:56:14.682Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:56:17.284Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:56:22.565Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:56:36.378Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:57:11.283Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T11:57:45.882Z",
+        "feature": "thank-you",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T12:06:43.199Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T12:17:38.727Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T12:30:44.419Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T13:50:35.652Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T13:51:03.436Z",
+        "feature": "thank-you",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:36:11.284Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:36:26.572Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:36:55.056Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:43:30.672Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:43:42.369Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:44:21.107Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:49:21.242Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:55:48.552Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:56:11.848Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:56:29.451Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T14:56:55.171Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:25:27.312Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:25:49.519Z",
+        "feature": "thank-you",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:30:32.949Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:30:35.494Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:30:37.616Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:30:48.338Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:30:52.584Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:30:55.399Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:30:58.069Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:31:09.634Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:31:31.697Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:31:57.797Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:07.512Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:14.329Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:19.485Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:24.133Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:32.345Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:37.830Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:49.632Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:32:55.751Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:33:16.082Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:33:39.123Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:33:49.473Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:33:59.829Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:34:19.995Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:34:26.347Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T15:34:46.230Z",
+        "feature": "thank-you",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T23:37:53.347Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T23:37:58.154Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:37:50.810Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:38:00.056Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:38:04.184Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:38:45.922Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:39:15.030Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:50:38.453Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:50:43.954Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:50:55.658Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T14:51:01.719Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:26:29.031Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:26:31.635Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:26:33.600Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:26:35.901Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:27:01.515Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:27:03.421Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:27:05.575Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:27:12.829Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:27:34.985Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:28:18.404Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:28:39.940Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:41:46.518Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:42:38.671Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:42:54.259Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:50:31.668Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:50:34.768Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:50:37.516Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:53:40.033Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:57:52.312Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T11:57:53.627Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T12:00:25.348Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T12:00:27.104Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T12:06:10.914Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T12:06:31.815Z",
+        "feature": "privacy",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T12:06:43.778Z",
+        "feature": "terms",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T12:06:58.623Z",
+        "feature": "subscribe",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T12:07:07.677Z",
+        "feature": "website",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}
