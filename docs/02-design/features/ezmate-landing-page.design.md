@@ -11,7 +11,7 @@
 
 ### 1.1 Purpose
 
-Design the HVCO (High-Value Content Offer) landing page, lead magnet content structure, and email nurture sequence to convert visitors into qualified leads for discovery calls.
+Design the HVCO (High-Value Content Offer) landing page, lead magnet content structure, and email nurture sequence to convert visitors into qualified leads for AI audits.
 
 ### 1.2 Scope
 
@@ -28,7 +28,7 @@ Design the HVCO (High-Value Content Offer) landing page, lead magnet content str
 | Landing Page Conversion | >25% |
 | Email Open Rate | >35% |
 | Email Click Rate | >5% |
-| Discovery Call Booking | >10% of leads |
+| AI Audit Booking | >10% of leads |
 
 ---
 
@@ -122,7 +122,7 @@ After form submission, redirect to Thank You page:
 │  ✅ Video 1 arrives tomorrow                                │
 │                                                             │
 │  "While you wait..."                                        │
-│  [Book a Free Discovery Call] → Calendly                    │
+│  [Book a Free AI Audit] → Calendly                    │
 │  "Get a personalized AI roadmap for your business"          │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -203,13 +203,13 @@ Page 18-19: Next Steps
 ─────────────────────────────
 • Quick wins you can implement today
 • When to consider professional help
-• Invitation to Discovery Call
+• Invitation to AI Audit
 
 Page 20: About ezmate.ai
 ─────────────────────────────
 • Our approach
 • Who we help
-• CTA: Book Discovery Call
+• CTA: Book AI Audit
 ```
 
 ### 3.2 Video Series Structure
@@ -245,7 +245,7 @@ Page 20: About ezmate.ai
 | Implementation (2:00-5:00) | Step-by-step what we built |
 | Results (5:00-7:00) | Specific numbers, ROI, time savings |
 | Offer (7:00-9:00) | Godfather Offer introduction |
-| CTA (9:00-10:00) | "Book your Discovery Call now" |
+| CTA (9:00-10:00) | "Book your AI Audit now" |
 | Length | 9-10 minutes |
 
 ### 3.3 Video Production Specs
@@ -299,7 +299,7 @@ Talk soon,
 ezmate.ai
 
 P.S. If you're eager to get started, you can book a free
-Discovery Call here: [CALENDLY LINK]
+AI Audit here: [CALENDLY LINK]
 ```
 
 #### Email 1: Video 1 (Day 1)
@@ -385,7 +385,7 @@ your business.
 Talk soon,
 [Founder Name]
 
-P.S. Have questions? Grab a free Discovery Call: [CALENDLY]
+P.S. Have questions? Grab a free AI Audit: [CALENDLY]
 ```
 
 #### Email 4: FAQ (Day 4)
@@ -441,7 +441,7 @@ I show you exactly what we built and the specific numbers.
 After watching, if you're ready to explore what's possible
 for YOUR business...
 
-[BOOK A FREE DISCOVERY CALL]
+[BOOK A FREE AI AUDIT]
 
 No pressure. Just a conversation about your goals.
 
@@ -463,7 +463,7 @@ We're only taking 3 new clients this month.
 (We keep it small so we can deliver real results, not just
 collect payments.)
 
-If you've been thinking about hopping on a Discovery Call,
+If you've been thinking about hopping on a AI Audit,
 now's the time.
 
 [BOOK YOUR SPOT]
@@ -493,7 +493,7 @@ Now it's decision time.
 
 You can:
 A) Keep doing things the way you've been doing them
-B) Book a free Discovery Call and see what's possible
+B) Book a free AI Audit and see what's possible
 
 If you choose B, here's what you get:
 
@@ -504,7 +504,7 @@ If you choose B, here's what you get:
 Plus, if you book in the next 48 hours, I'll include a
 FREE AI Audit ($297 value) with any engagement.
 
-[BOOK YOUR DISCOVERY CALL]
+[BOOK YOUR AI AUDIT]
 
 Whatever you decide, I hope this training was valuable.
 
@@ -566,7 +566,7 @@ Zero risk.
 | Tool | Setup Required |
 |------|----------------|
 | ConvertKit | Create form, sequence, tags |
-| Calendly | Discovery Call event type |
+| Calendly | AI Audit event type |
 | n8n | Webhook → CRM sync workflow |
 | HubSpot | Contact properties, pipeline |
 | GA4 | Conversion events |

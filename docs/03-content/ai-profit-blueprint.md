@@ -32,7 +32,7 @@ By ezmate.ai
 ## Chapter 7: Your Two Options
 *The DIY path or the done-for-you path.* We lay out both options side by side. Option A: follow the 7-day roadmap and build it yourself. Option B: let our team build your entire AI system in 7 days with a triple guarantee. The math makes the decision easy.
 
-## The Offer: Your Free Discovery Call
+## The Offer: Your Free AI Audit
 *30 minutes that could save you 20+ hours every week.* Book a free call, get a personalized AI roadmap, see a custom demo for your business, and learn exactly what it costs. Our Godfather Offer: live in 7 days or we build it free. 30-day money-back. 90-day ROI guarantee. Zero risk.
 
 ---

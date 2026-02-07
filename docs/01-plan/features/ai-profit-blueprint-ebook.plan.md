@@ -7,7 +7,7 @@
 > **Format**: PDF (branded)
 > **Core Tools**: Claude Code, Retell AI, Make.com
 > **Sales Framework**: Sell Like Crazy (Sabri Suby)
-> **Ultimate Goal**: Discovery Call booking → AI solution sales
+> **Ultimate Goal**: AI Audit booking → AI solution sales
 
 ---
 
@@ -129,7 +129,7 @@ Chapter 7: Your Two Options                             (3 pages)
   - Side-by-side comparison table
   - "The math is simple" — show cost of DIY time vs service fee
 
-THE OFFER: Your Free Discovery Call                     (2 pages)
+THE OFFER: Your Free AI Audit                     (2 pages)
   - What you get on the call (personalized AI roadmap)
   - Our Godfather Offer:
     → AI system live in 7 days or we build it free
@@ -137,7 +137,7 @@ THE OFFER: Your Free Discovery Call                     (2 pages)
     → 90-day ROI guarantee
   - Social proof: 3 testimonials
   - FAQ about the service
-  - 🔥 CTA: "Book Your Free Discovery Call Now"
+  - 🔥 CTA: "Book Your Free AI Audit Now"
     → [Calendly Link / QR Code]
 
 ─────────────────────────────────────────────────────
@@ -626,7 +626,7 @@ Total: ~12 hours over 7 days (realistically 2-4 weeks with learning curve)
 | | DIY (Option A) | Done-For-You (Option B) |
 |---|---------------|------------------------|
 | Setup time | 2-4 weeks | 7 days |
-| Your time investment | 12+ hours | 1 hour (Discovery Call) |
+| Your time investment | 12+ hours | 1 hour (AI Audit) |
 | Technical skills needed | Medium | None |
 | Ongoing maintenance | You handle it | We handle it |
 | Optimization | Trial and error | Expert-optimized |
@@ -644,7 +644,7 @@ Total: ~12 hours over 7 days (realistically 2-4 weeks with learning curve)
 
 ---
 
-### THE OFFER: Your Free Discovery Call (2 pages)
+### THE OFFER: Your Free AI Audit (2 pages)
 
 **Sell Like Crazy Phase: CONVERT — Godfather Offer**
 
@@ -652,7 +652,7 @@ Total: ~12 hours over 7 days (realistically 2-4 weeks with learning curve)
 
 > ## Ready to Stop Losing Leads and Start Scaling?
 >
-> Book a **Free Discovery Call** and get:
+> Book a **Free AI Audit** and get:
 >
 > **1. Personalized AI Roadmap** (30-minute call)
 > - We analyze your specific business
@@ -682,16 +682,16 @@ Total: ~12 hours over 7 days (realistically 2-4 weeks with learning curve)
 - "I tried the DIY route for 3 weeks. Then I called ezmate. Best decision I made." — James T., E-commerce
 
 FAQ:
-- "How much does it cost?" → "It depends on your needs. That's what the Discovery Call is for."
+- "How much does it cost?" → "It depends on your needs. That's what the AI Audit is for."
 - "Do I need technical knowledge?" → "Zero. We handle everything."
 - "What if it doesn't work for my business?" → "30-day money-back guarantee. Zero risk."
-- "How long does it take?" → "7 days from Discovery Call to go-live."
+- "How long does it take?" → "7 days from AI Audit to go-live."
 
 🔥 **MAIN CTA:**
 ```
 ┌─────────────────────────────────────────────────────┐
 │                                                      │
-│     BOOK YOUR FREE DISCOVERY CALL NOW                │
+│     BOOK YOUR FREE AI AUDIT NOW                │
 │                                                      │
 │     📅 calendly.com/ezmate-ai/discovery             │
 │                                                      │
@@ -715,8 +715,8 @@ FAQ:
 | Ch4 마지막 | Mini CTA (nudge) | "This getting complex? We can handle it." | → Ch7 페이지 |
 | Ch5 마지막 | Mini CTA (stronger) | "Go live in 7 days instead of 7 weeks." | → Ch7 페이지 |
 | Ch6 마지막 | Bridge | "Write down this number." | → Ch7로 자연스럽게 연결 |
-| Ch7 Option B | Primary CTA | "Book Your Free Discovery Call" | → Calendly |
-| Final Offer | Main CTA | "Book Your Free Discovery Call Now" | → Calendly + QR |
+| Ch7 Option B | Primary CTA | "Book Your Free AI Audit" | → Calendly |
+| Final Offer | Main CTA | "Book Your Free AI Audit Now" | → Calendly + QR |
 
 Mini CTA는 갈수록 강해지고, 최종 CTA에서 폭발하는 구조.
 

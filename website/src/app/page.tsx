@@ -844,7 +844,7 @@ export default function LandingPage() {
                 },
                 {
                   q: 'How much does it cost to work with you?',
-                  a: 'Every project is custom-quoted based on your specific needs. After a free Discovery Call, we provide a detailed proposal with transparent pricing. Most clients see ROI within the first month.'
+                  a: 'Every project is custom-quoted based on your specific needs. After a Free AI Audit, we analyze your current workflow and provide a detailed proposal with transparent pricing. Most clients see ROI within the first month.'
                 },
                 {
                   q: 'I have tried chatbots before and they were terrible. How is this different?',

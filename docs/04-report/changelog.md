@@ -72,7 +72,7 @@ All notable changes to the ezmate.ai project are documented here.
 - HVCO content production (PDF guide, 3-part video series)
 - Email sequence automation (7-day nurture)
 - .env.example file documentation
-- Calendly integration for discovery calls
+- Calendly integration for AI audits
 
 ### Deployment
 - Production URL: https://website-eta-coral-14.vercel.app

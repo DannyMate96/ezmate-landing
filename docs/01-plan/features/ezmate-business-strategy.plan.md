@@ -115,7 +115,7 @@ ezmate.ai Differentiators:
 │                    PRICING PRINCIPLES                        │
 ├─────────────────────────────────────────────────────────────┤
 │  ✅ NO public pricing on website                            │
-│  ✅ ALL quotes customized after Discovery Call              │
+│  ✅ ALL quotes customized after AI Audit              │
 │  ✅ Price based on: Pain Point → Value → Solution           │
 │  ✅ Packages bundled by client size and needs               │
 │  ✅ Target margin: 50-75% across all services               │
@@ -169,7 +169,7 @@ ezmate.ai Differentiators:
 
 | Service | Price | Purpose |
 |---------|-------|---------|
-| **Discovery Call** | FREE (30 min) | Lead conversion, needs assessment |
+| **AI Audit** | FREE (30 min) | Lead conversion, needs assessment |
 | **AI Audit** | $297 | Current process analysis + recommendations |
 | **Strategy Session** | $497 (2 hours) | AI adoption roadmap |
 | **Ongoing Advisory** | $997/mo | 4 hours/month strategy meetings |
@@ -252,7 +252,7 @@ ezmate.ai Differentiators:
 
 ### 3.4 Proposal Framework (Good/Better/Best)
 
-Always present 3 options after Discovery Call:
+Always present 3 options after AI Audit:
 
 | Option | Composition | Price | Purpose |
 |--------|-------------|-------|---------|
@@ -267,7 +267,7 @@ SHOW on website:
 ✅ Pain point-focused messaging
 ✅ Case studies / Results
 ✅ "Get Custom Quote" CTA
-✅ Discovery Call booking
+✅ AI Audit booking
 
 DO NOT show on website:
 ❌ Specific prices
@@ -387,7 +387,7 @@ Day 7: Offer Email - "Your AI System Awaits"
 │                                                             │
 │       ↓                                                     │
 │                                                             │
-│  [Discovery Call Booking Page]                              │
+│  [AI Audit Booking Page]                              │
 │                                                             │
 │       ↓ (If not purchased)                                  │
 │                                                             │
@@ -396,7 +396,7 @@ Day 7: Offer Email - "Your AI System Awaits"
 │                                                             │
 │       ↓                                                     │
 │                                                             │
-│  [Application/Discovery Call Booking]                       │
+│  [Application/AI Audit Booking]                       │
 │  (Calendly - Automated scheduling)                          │
 │                                                             │
 │       ↓                                                     │
@@ -406,7 +406,7 @@ Day 7: Offer Email - "Your AI System Awaits"
 │                                                             │
 │       ↓                                                     │
 │                                                             │
-│  [Discovery Call] → [Custom Proposal] → [Close]             │
+│  [AI Audit] → [Custom Proposal] → [Close]             │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -466,7 +466,7 @@ Commercial Email (C Group) ❌       Personal Email (P Group) ✅
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  1. DISCOVERY CALL (Free 30 min)                            │
+│  1. AI AUDIT (Free 30 min)                            │
 │     └─ Identify pain points, assess scale/budget            │
 │                                                             │
 │  2. AI AUDIT (Optional, $297)                               │
@@ -490,7 +490,7 @@ Commercial Email (C Group) ❌       Personal Email (P Group) ✅
 
 ## 9. Sales Call Framework ("Sell Like a Doctor")
 
-### 8.1 Discovery Call Framework
+### 8.1 AI Audit Framework
 
 ```
 1. DIAGNOSE (60% of call)
@@ -599,8 +599,8 @@ Scale Target ($50K/mo): 125 clients
 | HVCO Conversion Rate | >25% |
 | Email Open Rate | >35% |
 | Email Click Rate | >5% |
-| Discovery Call Book Rate | >10% of leads |
-| Discovery Call Close Rate | >30% |
+| AI Audit Book Rate | >10% of leads |
+| AI Audit Close Rate | >30% |
 | Client Retention (90 days) | >85% |
 | NPS Score | >50 |
 | Customer Acquisition Cost | <$500 |

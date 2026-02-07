@@ -335,7 +335,7 @@ Assessment 원본: [링크]
 ```
 
 **👤 이 단계부터 사람이 개입:**
-- 파운더가 미팅 진행 (30분 Discovery Call)
+- 파운더가 미팅 진행 (30분 AI Audit)
 - 최종 서비스 범위 확정
 - 계약서 발송 (이것도 자동화 가능: PandaDoc / DocuSign)
 - 결제 처리
@@ -386,7 +386,7 @@ Assessment 원본: [링크]
 │                                                                  │
 │  SCHEDULING                                                      │
 │  └─ Calendly                                                     │
-│     ├─ Discovery Call 예약                                        │
+│     ├─ AI Audit 예약                                        │
 │     └─ 자동 리마인더                                              │
 │                                                                  │
 │  NOTIFICATIONS                                                   │
@@ -452,7 +452,7 @@ Assessment 원본: [링크]
 
 | # | 항목 | 설명 | 도구 |
 |---|------|------|------|
-| 9 | Calendly 설정 | Discovery Call 이벤트 + 자동 리마인더 | Calendly |
+| 9 | Calendly 설정 | AI Audit 이벤트 + 자동 리마인더 | Calendly |
 | 10 | Slack 알림 설정 | Hot lead / 오퍼 수락 / 미팅 브리핑 | Make.com + Slack |
 | 11 | 미팅 브리핑 자동화 | Claude API로 미팅 전 분석 요약 | Claude API + Make.com |
 | 12 | Follow-up 자동화 | 오퍼 미응답 / 미팅 후 follow-up | ConvertKit + Make.com |

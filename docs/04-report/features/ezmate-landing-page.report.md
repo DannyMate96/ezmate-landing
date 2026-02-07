@@ -35,11 +35,11 @@ The landing page was conceived as part of a broader business strategy document t
 - Target audience: Australian SMBs (e-commerce, real estate, healthcare, professional services, trades, construction)
 - Lead magnet: "The 5-Step AI Profit Blueprint" (PDF guide + 3-part video series)
 - Primary conversion metric: Form completion rate (target >25%)
-- Secondary metrics: Email open rate (>35%), click rate (>5%), discovery call booking (>10%)
+- Secondary metrics: Email open rate (>35%), click rate (>5%), AI audit booking (>10%)
 - Email funnel: 7-day Magic Lantern nurture sequence
 
 **Strategic Goals**:
-1. Capture leads for discovery calls through HVCO (High-Value Content Offer)
+1. Capture leads for AI audits through HVCO (High-Value Content Offer)
 2. Establish trust through social proof and case studies
 3. Create 24/7 lead magnet automation (set and forget)
 4. Integrate with email marketing platform for nurture sequence
@@ -141,7 +141,7 @@ Node Version: 18+
 4. **C:\Users\user\ezmate-ai\website\src\app\thank-you\page.tsx**
    - Post-submission confirmation page
    - Confirms lead capture success
-   - Encourages further engagement (discovery call booking)
+   - Encourages further engagement (AI audit booking)
    - Maintains brand consistency
 
 5. **C:\Users\user\ezmate-ai\website\src\app\privacy\page.tsx**
@@ -205,7 +205,7 @@ Node Version: 18+
 8. **Our Services Section** (Enhancement)
    - 3 service cards describing AI solutions
    - Each with icon, title, description
-   - Links to discovery call
+   - Links to AI audit
    - Demonstrates range of services
 
 9. **Social Proof / Testimonials Section**
@@ -292,7 +292,7 @@ Node Version: 18+
    | 1 | Email service integration placeholder | Low | Currently console.log only. TODO: Connect ConvertKit/Mailerlite | Phase 2 |
    | 2 | .env.example file | Low | Missing example for environment variables | Phase 2 |
    | 3 | Video hosting setup | Medium | PDF and video links not configured | Phase 2 (HVCO content) |
-   | 4 | Calendly integration | Medium | Discovery call booking not connected | Phase 3 (Integration) |
+   | 4 | Calendly integration | Medium | AI Audit booking not connected | Phase 3 (Integration) |
    | 5 | Email sequence setup | Medium | ConvertKit/Mailerlite automation not configured | Phase 3 (Integration) |
 
 **Design vs Implementation Analysis**:
@@ -419,7 +419,7 @@ Node Version: 18+
   - Current state: Design document complete, awaiting implementation trigger
 
 - ⏸️ **Calendly Integration**: Not blocking landing page functionality. Defer to Phase 3. Timeline: TBD
-  - Current state: Discovery call CTAs point to #get-blueprint anchor
+  - Current state: AI Audit CTAs point to #get-blueprint anchor
   - Future: Link to Calendly booking page
 
 - ⏸️ **.env.example Documentation**: Non-critical documentation. Defer to documentation phase
@@ -479,7 +479,7 @@ Node Version: 18+
 | Form Submissions | 0+ | Ongoing | Continuous |
 | Email Open Rate | N/A | >35% | After sequence setup |
 | Email Click Rate | N/A | >5% | After sequence setup |
-| Discovery Call Booking | N/A | >10% | Phase 3 |
+| AI Audit Booking | N/A | >10% | Phase 3 |
 | Lead Quality Score | N/A | High | TBD |
 
 ---
@@ -729,7 +729,7 @@ Node Version: 18+
    - Test sequence delivery
 
 2. **Calendly Integration**
-   - Create Calendly event for discovery calls
+   - Create Calendly event for AI audits
    - Link from CTA buttons to booking
    - Set up automatic meeting reminders
    - Connect to team calendar
