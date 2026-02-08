@@ -692,11 +692,11 @@ FAQ:
 │                                                      │
 │     BOOK YOUR FREE AI AUDIT NOW                │
 │                                                      │
-│     📅 calendly.com/ezmate-ai/discovery             │
+│     📅 ezmate.ai/qualify                             │
 │                                                      │
 │     [QR CODE]                                        │
 │                                                      │
-│     Or email us: hello@ezmate.ai                     │
+│     Or email us: info@ezmate.ai                     │
 │                                                      │
 │     "60 minutes that could save you 20+ hours        │
 │      every week. What do you have to lose?"          │

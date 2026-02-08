@@ -1,9 +1,6 @@
 import Link from 'next/link'
 
 export default function ThankYouPage() {
-  // TODO: Replace with your actual Calendly link
-  const calendlyLink = 'https://calendly.com/ezmate-ai/discovery'
-
   return (
     <main className="min-h-screen bg-[#0f172a] flex items-center justify-center px-4 py-12">
       <div className="max-w-xl mx-auto text-center">
@@ -37,25 +34,23 @@ export default function ThankYouPage() {
             </ul>
           </div>
 
-          {/* Calendly CTA */}
+          {/* Qualification CTA */}
           <div className="border-t border-white/10 pt-8">
             <p className="text-gray-400 mb-4">
               <strong className="text-white">While you wait...</strong><br />
               Want to get a personalized AI roadmap for your business?
             </p>
             <a
-              href={calendlyLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/qualify"
               className="btn-primary w-full justify-center"
             >
-              Book a Free AI Audit
+              Get Your AI Recommendation
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
             <p className="text-sm text-gray-500 mt-3">
-              60 minutes | No obligation | Custom AI recommendations
+              Takes 2 minutes | No obligation | Personalized results
             </p>
           </div>
         </div>

@@ -1736,9 +1736,9 @@ Or you can take 60 minutes to find out exactly how AI can transform your busines
 │                                                       │
 │         BOOK YOUR FREE AI AUDIT NOW                   │
 │                                                       │
-│         📅  calendly.com/ezmate-ai/audit             │
+│         📅  ezmate.ai/qualify                         │
 │                                                       │
-│         📧  hello@ezmate.ai                          │
+│         📧  info@ezmate.ai                          │
 │                                                       │
 │         "60 minutes that could save you               │
 │          20+ hours every week.                        │
