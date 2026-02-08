@@ -260,7 +260,7 @@ export default function QualifyPage() {
   if (step === 0) {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
-        <div className="max-w-lg w-full text-center">
+        <div className="max-w-xl lg:max-w-2xl w-full text-center">
           <a href="/" className="inline-flex items-center gap-2.5 mb-10">
             <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-white font-bold text-sm">ez</span>
@@ -270,22 +270,37 @@ export default function QualifyPage() {
             </span>
           </a>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Let&apos;s Find the Right AI Solution for You
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            Before We Talk, Help Us<br className="hidden md:block" /> Understand Your Business
           </h1>
-          <p className="text-gray-400 text-lg mb-8">
-            Answer 8 quick questions (takes under 2 minutes) so we can prepare a personalized recommendation for your business.
+          <p className="text-gray-400 text-lg mb-3">
+            So we can come prepared with the right AI strategy for <strong className="text-white">your</strong> specific situation.
           </p>
+
+          <div className="card max-w-md mx-auto text-left mb-8 !p-5">
+            <p className="text-sm text-gray-400 mb-3 font-medium uppercase tracking-wide">After 8 quick questions, you&apos;ll get:</p>
+            <ul className="space-y-2.5">
+              <li className="flex items-center gap-3 text-gray-300">
+                <span className="text-primary">✓</span> A personalized AI recommendation for your business
+              </li>
+              <li className="flex items-center gap-3 text-gray-300">
+                <span className="text-primary">✓</span> Access to book a free 60-min AI Audit with our team
+              </li>
+              <li className="flex items-center gap-3 text-gray-300">
+                <span className="text-primary">✓</span> We&apos;ll already know your needs before the call
+              </li>
+            </ul>
+          </div>
 
           <button
             onClick={() => setStep(1)}
             className="btn-primary text-lg px-10 py-4"
           >
-            Get Started →
+            Get Started — Takes Under 2 Minutes →
           </button>
 
           <p className="text-gray-500 text-sm mt-6">
-            No signup required. 100% free.
+            No signup required. No spam. 100% free.
           </p>
         </div>
       </div>
@@ -300,7 +315,7 @@ export default function QualifyPage() {
 
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
-        <div className={`max-w-lg w-full text-center transition-all duration-500 ${animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
+        <div className={`max-w-xl lg:max-w-2xl w-full text-center transition-all duration-500 ${animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
           <a href="/" className="inline-flex items-center gap-2.5 mb-10">
             <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-white font-bold text-sm">ez</span>
@@ -417,7 +432,7 @@ export default function QualifyPage() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <div className="px-4 pt-6 pb-4">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl lg:max-w-3xl mx-auto">
           <div className="flex items-center justify-between mb-4">
             <a href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
@@ -447,7 +462,7 @@ export default function QualifyPage() {
 
       {/* Question Content */}
       <div className="flex-1 flex items-center justify-center px-4 pb-8">
-        <div className={`max-w-2xl w-full transition-all duration-300 ${animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
+        <div className={`max-w-2xl lg:max-w-3xl w-full transition-all duration-300 ${animating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
             {currentQuestion.question}
           </h2>
@@ -456,7 +471,7 @@ export default function QualifyPage() {
           </p>
 
           {/* Options */}
-          <div className="grid gap-3">
+          <div className="grid gap-3 lg:grid-cols-2">
             {currentQuestion.options.map((opt) => {
               const isSelected = selected.includes(opt.label)
               return (

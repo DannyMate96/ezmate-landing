@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-semibold text-white mb-3">7. Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact us at{' '}
-              <a href="mailto:hello@ezmate.ai" className="text-primary hover:underline">hello@ezmate.ai</a>.
+              <a href="mailto:info@ezmate.ai" className="text-primary hover:underline">info@ezmate.ai</a>.
             </p>
           </section>
         </div>

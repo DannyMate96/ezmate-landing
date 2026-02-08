@@ -1736,7 +1736,7 @@ Or you can take 60 minutes to find out exactly how AI can transform your busines
 │                                                       │
 │         BOOK YOUR FREE AI AUDIT NOW                   │
 │                                                       │
-│         📅  ezmate.ai/qualify                         │
+│         📅  ezmate.ai/lets-start                         │
 │                                                       │
 │         📧  info@ezmate.ai                          │
 │                                                       │

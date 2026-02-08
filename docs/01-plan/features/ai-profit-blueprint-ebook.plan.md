@@ -692,7 +692,7 @@ FAQ:
 │                                                      │
 │     BOOK YOUR FREE AI AUDIT NOW                │
 │                                                      │
-│     📅 ezmate.ai/qualify                             │
+│     📅 ezmate.ai/lets-start                             │
 │                                                      │
 │     [QR CODE]                                        │
 │                                                      │

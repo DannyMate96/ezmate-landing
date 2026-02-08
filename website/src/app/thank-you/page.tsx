@@ -41,7 +41,7 @@ export default function ThankYouPage() {
               Want to get a personalized AI roadmap for your business?
             </p>
             <a
-              href="/qualify"
+              href="/lets-start"
               className="btn-primary w-full justify-center"
             >
               Get Your AI Recommendation
