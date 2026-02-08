@@ -85,7 +85,11 @@ export default function LandingPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       })
-      if (!res.ok) throw new Error('Subscribe failed')
+      const data = await res.json()
+      if (!res.ok) {
+        console.error('API error:', data)
+        throw new Error(data.error || 'Subscribe failed')
+      }
       window.location.href = '/thank-you'
     } catch (error) {
       console.error('Form submission error:', error)
@@ -775,16 +779,17 @@ export default function LandingPage() {
                   <select
                     value={formData.businessType}
                     onChange={(e) => setFormData({...formData, businessType: e.target.value})}
-                    className="input-field"
+                    className="input-field appearance-none bg-[#1a2332] cursor-pointer"
+                    style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%239ca3af' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center' }}
                   >
-                    <option value="">Select one...</option>
-                    <option value="ecommerce">E-commerce / Retail</option>
-                    <option value="realestate">Real Estate</option>
-                    <option value="healthcare">Healthcare / Medical</option>
-                    <option value="professional">Professional Services (Law, Accounting, etc.)</option>
-                    <option value="trades">Trades & Construction</option>
-                    <option value="hospitality">Hospitality / Food Service</option>
-                    <option value="other">Other</option>
+                    <option value="" className="bg-[#1a2332] text-gray-400">Select one...</option>
+                    <option value="ecommerce" className="bg-[#1a2332] text-white">E-commerce / Retail</option>
+                    <option value="realestate" className="bg-[#1a2332] text-white">Real Estate</option>
+                    <option value="healthcare" className="bg-[#1a2332] text-white">Healthcare / Medical</option>
+                    <option value="professional" className="bg-[#1a2332] text-white">Professional Services (Law, Accounting, etc.)</option>
+                    <option value="trades" className="bg-[#1a2332] text-white">Trades & Construction</option>
+                    <option value="hospitality" className="bg-[#1a2332] text-white">Hospitality / Food Service</option>
+                    <option value="other" className="bg-[#1a2332] text-white">Other</option>
                   </select>
                 </div>
                 <button

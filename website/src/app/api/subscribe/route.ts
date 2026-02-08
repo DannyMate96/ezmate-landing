@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
 
-const MAILERLITE_API_KEY = process.env.MAILERLITE_API_KEY
 const MAILERLITE_API_URL = 'https://connect.mailerlite.com/api'
 
 export async function POST(request: Request) {
@@ -15,7 +14,8 @@ export async function POST(request: Request) {
       )
     }
 
-    if (!MAILERLITE_API_KEY) {
+    const apiKey = process.env.MAILERLITE_API_KEY
+    if (!apiKey) {
       console.error('MAILERLITE_API_KEY is not set')
       return NextResponse.json(
         { error: 'Email service not configured' },
@@ -28,34 +28,30 @@ export async function POST(request: Request) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${MAILERLITE_API_KEY}`,
+        'Accept': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
         email,
         fields: {
           name: firstName,
-          last_name: '',
           company: businessType || '',
         },
       }),
     })
 
-    if (!response.ok) {
-      const error = await response.json()
-      console.error('Mailerlite error:', error)
+    const data = await response.json().catch(() => null)
 
-      // If subscriber already exists, still return success
-      if (response.status === 422) {
-        return NextResponse.json({ success: true, existing: true })
-      }
-
-      return NextResponse.json(
-        { error: 'Failed to subscribe' },
-        { status: 500 }
-      )
+    // 200 = created, 201 = created, 422 = already exists (treat as success)
+    if (response.ok || response.status === 422) {
+      return NextResponse.json({ success: true })
     }
 
-    return NextResponse.json({ success: true })
+    console.error('Mailerlite error:', response.status, data)
+    return NextResponse.json(
+      { error: 'Failed to subscribe', detail: data?.message || 'Unknown error' },
+      { status: 500 }
+    )
   } catch (error) {
     console.error('Subscribe error:', error)
     return NextResponse.json(
